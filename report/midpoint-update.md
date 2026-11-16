@@ -1,67 +1,97 @@
-# Can a language-model judge identify its own grading errors?
-DSC 261 · Responsible Data Science · Midterm update v0.2, revised
+# Can a Language-Model Judge Identify Its Own Grading Errors?
+DSC 261 · Responsible Data Science · Midterm Update
 
 Haoxiang Qiu, Yuguo Du, Edith Gu, Lucia Si, Wenkai Kang
 
-## Motivation and research question
-A grader can solve many problems correctly and still approve a wrong answer with complete confidence. For someone using that grader, two decisions matter: which candidate answers to accept, and which grading decisions deserve a second look. We study the second decision using selective prediction [1], self-reported confidence [2], and factual correctness as an LLM judging task [3]. At a given review workload, does setting aside the judge's least confident verdicts catch more of its mistakes than setting aside cases at random?
+University of California San Diego
 
-## From a benchmark question to a grading decision
-We sampled 200 questions from each official test pool. Each question has one fixed candidate, shared across all prompts. In each domain, 60 questions calibrate the retention rule and 140 evaluate it. Each split contains equal numbers of correct and incorrect candidates. The judge receives the question, candidate and original options where applicable; only the evaluator has the official key. If the candidate is wrong and the judge rejects it, the judge earns a correct verdict.
+## 1 The grading decision we want to check
 
-| Domain | Correct candidate | Incorrect candidate |
+Suppose a student gives the right numerical answer and an automated grader marks it wrong. The student's answer is correct, but the grading decision is an error. If a reviewer has time to check only a few decisions, can the grader's own confidence help them find mistakes like this one? We study that question on math word problems and medical examination questions. Both have answer keys, so we can count exactly how many mistakes a review queue contains before anyone attempts a correction.
+
+We tested two ways of asking the grader where it needed help. In one run, it could explicitly decline to grade a candidate. In the other runs, it had to give a verdict and report its confidence. We then kept some of those verdicts and set the rest aside. A useful confidence score should put more mistakes into a queue of a given size than drawing the same number of cases at random. This comparison follows selective classification [1]. Prior work on models' stated probabilities [2] and on automated judging [3] motivates a narrower question here. Even a judge that grades most answers correctly may give its few wrong verdicts the highest possible score.
+
+## 2 Questions, candidates and scoring
+
+We first needed to know whether these benchmarks would yield enough grading errors to study. During development, the plain prompt disagreed with the key on 41 of 100 math candidates and 13 of 100 medical candidates. We kept both datasets. We sampled the formal questions from the official test pools and excluded development items by source identifier and normalized question text. The sampling seed was 2612026. This gives us fresh questions relative to our pilot. We have no way to check whether the judge encountered a benchmark during training.
+
+Each formal question received one candidate answer, which stayed the same across prompts. For GSM8K [4], a correct candidate used the reference number and a wrong candidate used a deterministic numerical change. For US MedQA [5], a correct candidate used the keyed option and a wrong one used a distractor already present in the question. A local large language model saw the question, the candidate and, for MedQA, the options. We kept the key for scoring. A rejection of a wrong candidate and an acceptance of a correct candidate each earned one correct judgment.
+
+Table 1. The two splits serve different purposes. Within every cell, half the candidates were correct and half were wrong.
+
+| Dataset | Set the rule | Test the rule | Total |
+| --- | --- | --- | --- |
+| GSM8K | 60 | 140 | 200 |
+| US MedQA | 60 | 140 | 200 |
+
+## 3 Four ways to grade the same answer
+
+We started with a short prompt asking for a verdict and a number from 0 to 1. The number referred to the judge's confidence in its own verdict. A judge could reject a candidate with confidence 1.0. We varied two choices independently. The rubric asked it to solve the problem, check units and constraints, and compare the result with the candidate. The thinking setting controlled whether the model could use a reasoning phase before returning its verdict. This gave us four conditions: plain, rubric only, thinking only, and thinking with the rubric.
+
+The 400 questions yielded 1,600 scheduled judgments across those conditions. We obtained 1,586 usable responses. The other 14 reached the output limit on MedQA with thinking enabled. We recorded them as incomplete. Counting an interrupted response as a voluntary decision to abstain would mix a limit on generation with the behavior we wanted to measure.
+
+---
+
+## 4 Could the judge choose cases for review?
+
+Our initial experiment required a verdict. Drawing on the team's judging framework [6], we added a separate prompt that also accepted “Abstain.” We used the plain prompt with thinking disabled and gave it the same 280 held-out candidates. It graded every one. Against the official keys, it made 41 math errors and 22 medical errors. Of the 63 mistakes, 48 accepted a wrong candidate and 15 rejected a correct one. All 63 would have passed through a system that waited for the judge to ask for help.
+
+This left us with zero referrals from the voluntary prompt. Matching every other method to that workload would simply keep all 140 cases in each domain. We therefore evaluated the confidence scores from the four required-verdict runs at three prespecified retention targets. The voluntary prompt has its own result in the text. The figure compares the two methods that actually selected subsets.
+
+## 5 What confidence buys at a fixed workload
+
+For each domain and grading condition, we used the 60 calibration cases to set a rule targeting 50%, 75% or 90% retention. We froze both the score cutoff and the rule for cases tied at that cutoff. On the 140 test questions, the number kept could differ from the target. Coverage is the number kept divided by 140. Retained error rate is the number of grading mistakes among the kept cases divided by the number kept. For each comparison, random selection keeps exactly the same number from the same pool of valid verdicts. Its average retained error rate equals the error rate in that pool.
+
+Table 2. Plain-prompt test results. Each entry gives the number of mistakes divided by the number of verdicts kept. Each domain started with 140 verdicts.
+
+| Target | GSM8K | US MedQA |
 | --- | --- | --- |
-| GSM8K · math [4] | Official numeric answer | Deterministic change to the official number |
-| US MedQA · exam questions [5] | Official answer option | An existing distractor from the same question |
+| 50% | 19/69 (27.54%) | 6/64 (9.38%) |
+| 75% | 24/102 (23.53%) | 8/86 (9.30%) |
+| 90% | 31/123 (25.20%) | 16/122 (13.11%) |
 
-We queried a local large language model for a binary verdict and confidence in that verdict. We crossed two prompt choices: providing a grading rubric and enabling the endpoint's thinking setting. Across four conditions and 400 candidates, 1,586 of 1,600 calls produced valid judgments. The 14 truncated responses occurred on medical questions with thinking enabled. We count these separately from a deliberate decision to defer.
+![Retained error against actual coverage for math and medicine](risk-coverage.png)
 
-## What happened when the judge could decline?
-A separate plain, thinking-off prompt, informed by the team pipeline design [6], explicitly allowed abstention. The local model graded all 280 evaluation cases. It made 41 math errors and 22 medical errors. Of those 63 mistakes, 48 accepted a wrong candidate and 15 rejected a correct one. Giving the judge discretion referred none of them for review. This establishes its behavior on this prompt and sample. With all cases retained, there is no selected subset on which to evaluate its ability to pick cases. The following comparison uses the confidence scores from the binary-verdict runs.
+Figure 1. Plain prompt, thinking off. The horizontal axis shows the share of test cases actually kept. The labels identify the targets used on calibration data. The dashed line is the expected error rate if we keep the same number at random.
+
+### Following 54 medical referrals
+
+The plain medical judge made 21 mistakes in 140 verdicts. At the 75% target, the rule kept 86 verdicts and marked the other 54 for review. The 86 kept cases contained eight mistakes. The queue therefore contained 13 mistakes and 41 sound verdicts. Choosing 54 cases at random would find 54 × 21/140 = 8.1 mistakes on average. With the same number of places, the confidence rule found about five more. We can count those mistakes from the key. How many a reviewer would actually correct is a separate question.
+
+The retained error rate was 9.30%, compared with 15.00% under random selection. The estimated difference was −5.70 percentage points, with a 95% paired bootstrap interval from −11.10 to −1.02 points for the frozen policy. Raising the target to 90% reduced the queue to 18 cases and left 16 mistakes among the 122 kept. The choice of target changes both how many decisions someone must examine and how many wrong decisions get through.
 
 ---
 
-## Confidence under three review workloads
-For each domain and prompt, we used the calibration scores to set a cutoff for each target (50%, 75%, 90%) and fixed the rule for ties. Applying that rule to new cases produces a realized count, k. Coverage is k divided by 140 planned cases. Retained error is the number of incorrect verdicts among the k retained. The random comparison draws exactly k from the same valid pool. Its expected error rate equals the pool's error rate because each verdict has the same chance of being drawn.
+## 6 Why the math result needs a closer look
 
-![Retained error versus actual coverage in both domains](risk-coverage.png)
+At the 75% target, the plain math run appears to tell a similar story. It kept 102 of 140 verdicts, with 24 mistakes among them (23.53%), below the 28.57% random baseline. But when we inspected the scores, 136 of the 140 verdicts had exactly the same confidence, 1.0. Those 136 included 38 mistakes. The rule had to choose 102 cases from that tied group. Their confidence scores provided no ordering within the group.
 
-Figure 1. Plain prompt, thinking off. Points show frozen confidence rules and labels show their calibration targets. Dashed lines give the exact matched random expectation. A lower point at the same horizontal position means fewer errors for the same number of reviews.
+We kept the same workload and averaged over equally likely ways to choose 102 of the 136 ties. That gives 102 × 38/136 = 28.5 retained mistakes on average, or 27.94%. Most of the apparent five-point gain came from which equally confident cases the frozen rule happened to keep. Applying the same check to the plain medical run gave 10.96% retained error, still below 15.00% at random. The medical scores carried some information about where mistakes were concentrated, even though they often gave several cases the same priority.
 
-Table 1. Counts behind Figure 1. Each group began with 140 test cases. Before selection, the plain judge made 40 math errors (28.57%) and 21 medical errors (15.00%).
+The rubric-only results offer a second check. On math, the observed retained error was 20.79%. Averaging across choices within the cutoff tie raised it to 26.81%, alongside a random expectation of 26.43%. On medicine the corresponding figures were 11.43%, 11.04% and 13.57%. The same caution about tied math scores applies under either prompt.
 
-| Target | GSM8K retained | Errors / retained | MedQA retained | Errors / retained |
+## 7 What changed with the grading prompt?
+
+Table 3. Grading errors at the 75% target. “All” counts every valid test verdict. “Kept” counts only the verdicts retained by the confidence rule. The two columns for each domain refer to the same 140 scheduled questions.
+
+| Prompt | Math all | Math kept | Med. all | Med. kept |
 | --- | --- | --- | --- | --- |
-| 50% | 69/140 | 19/69 · 27.54% | 64/140 | 6/64 · 9.38% |
-| 75% | 102/140 | 24/102 · 23.53% | 86/140 | 8/86 · 9.30% |
-| 90% | 123/140 | 31/123 · 25.20% | 122/140 | 16/122 · 13.11% |
+| Plain | 40/140 | 24/102 | 21/140 | 8/86 |
+| Rubric | 37/140 | 21/101 | 19/140 | 12/105 |
+| Thinking | 1/140 | 1/92 | 5/138 | 0/107 |
+| Both | 0/140 | 0/90 | 4/136 | 0/113 |
 
-## What did the 54 MedQA review slots buy?
-At the 75% target, the rule actually retained 86/140 judgments (61.4%). Of the 21 original errors, 8 remained and 13 fell in the 54 flagged cases. Randomly flagging 54 would capture 8.1 errors on average. Confidence therefore located about five additional errors at the same workload. Moving from the 50% to the 75% target retained 22 more decisions with almost the same error rate. At the 90% target only 18 were flagged, and retained error rose to 13.11%. The fixed-rule medical error gap at the 75% target was -5.70 percentage points (paired bootstrap 95% interval, -11.10 to -1.02 points). This interval holds the calibrated policy fixed; changing the selected cases at the cutoff is examined on the next page. These counts evaluate routing against the official key; we did not measure a human reviewer's subsequent decisions.
+Adding the rubric to the plain prompt reduced total mistakes slightly in both domains. Enabling thinking changed the verdicts much more. In math, the thinking-only run made just one mistake, and the retention rule kept it. The run with both settings made none. With so few mistakes, high grading accuracy gives us little evidence about whether the judge can identify its own failures.
 
----
+In medicine, the thinking-only run returned 138 valid verdicts. All five errors scored below the retention cutoff. The run with both settings returned 136 valid verdicts and placed all four errors below its cutoff. We observed zero errors among the 107 and 113 retained judgments, respectively. The corresponding 95% Wilson upper limits are 3.47% and 3.29%. The denominators in Table 3 show a second cost. Six of the 280 scheduled medical test responses across these two settings were incomplete. A system using either prompt would still need a policy for a case that reaches the output limit before a verdict arrives.
 
-## When many judgments receive the same score
-On GSM8K, 136/140 plain-prompt judgments received maximum confidence. At the 75% target, 102 of those 136 tied cases were retained. The fixed rule happened to keep 24 errors, but the tied group contained 38. Uniformly choosing 102 within the tie would keep 102 × 38/136 = 28.5 errors on average. The resulting 27.94% risk is close to the 28.57% random baseline. The apparent five-point gain in Figure 1 thus depends largely on which equal-score cases were kept. On MedQA, averaging over cutoff ties yields 10.96%, still below its 15.00% random baseline.
+## 8 What remains for the final study
 
-## How rubric and thinking affected grading
-Table 2. Results at the 75% calibration target. Fractions give errors / judgments. The random expectation in each row equals the error rate of all valid judgments. Parenthesized rates show the observed error among retained judgments.
+By midpoint we had completed the pilot, the four grading conditions, the voluntary-abstention run and all 24 comparisons of confidence with random selection. The two benchmarks differ in answer format, the kinds of wrong answers we constructed, and difficulty. We cannot attribute the contrast to subject matter alone. We also deliberately balanced correct and wrong candidates. A classroom or clinical review queue could have a different mix. Our medical results concern agreement with examination keys.
 
-| Prompt | GSM8K all valid | GSM8K retained | MedQA all valid | MedQA retained |
-| --- | --- | --- | --- | --- |
-| Plain | 40/140 | 24/102 (23.53%) | 21/140 | 8/86 (9.30%) |
-| Rubric | 37/140 | 21/101 (20.79%) | 19/140 | 12/105 (11.43%) |
-| Thinking | 1/140 | 1/92 (1.09%) | 5/138 | 0/107 (0.00%) |
-| Thinking + rubric | 0/140 | 0/90 (0.00%) | 4/136 | 0/113 (0.00%) |
+The next question follows directly from the 54 medical referrals. If we use the thinking-enabled verdict for just those cases, how many first-pass errors does it correct, and how many sound decisions does it overturn? We can answer by matching the saved verdicts question by question and comparing with random referral of the same size. We can also count the output tokens spent on both passes. This would show what the proposed second look buys beyond putting more mistakes in the queue.
 
-Enabling thinking coincided with the largest drop in overall error. On math, one or zero errors remained to be found. On medicine, both thinking settings placed all observed valid errors below the cutoff. Zero retained errors still permits positive underlying risk: the 95% Wilson upper limits are 3.47% for 0/107 and 3.29% for 0/113. With the rubric alone, both domains had slightly fewer total mistakes than under the plain prompt; the confidence rule also retained different numbers. Comparisons to random are matched within each row.
-
-## Limits, progress and next test
-The two benchmarks differ in answer format, candidate construction and difficulty. A contrast between them cannot establish a domain effect. Correct and incorrect candidates are artificially balanced, benchmark exposure is unknown, and official medical exam keys do not establish clinical performance. The saved runs cover one judge and the optional-abstention prompt reused the same evaluation items.
-
-At midpoint the dataset, four prompt conditions, optional-abstention run and all 24 coverage comparisons are complete. For the final study we propose checking whether the medical advantage and the math score ties recur on fresh questions with the rules frozen. A second judge on the same candidates is an optional cross-model check. Code, de-identified verdicts and build instructions accompany this report. Codex assisted with implementation, experiment execution, analysis and drafting.
-
----
+The project archive includes the case counts, selection rules and recorded verdicts used in these calculations. Codex assisted with implementation, analysis and drafting.
 
 ## References
 
