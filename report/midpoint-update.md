@@ -34,7 +34,7 @@ The 400 questions yielded 1,600 scheduled judgments across those conditions. We 
 
 ## 4 Could the judge choose cases for review?
 
-Our initial experiment required a verdict. Drawing on the team's judging framework [6], we added a separate prompt that also accepted “Abstain.” We used the plain prompt with thinking disabled and gave it the same 280 held-out candidates. It graded every one. Against the official keys, it made 41 math errors and 22 medical errors. Of the 63 mistakes, 48 accepted a wrong candidate and 15 rejected a correct one. All 63 would have passed through a system that waited for the judge to ask for help.
+Our initial experiment required a verdict. For the same 280 held-out candidates, we added “Abstain” as a third possible response to the plain prompt and kept thinking disabled. It graded every one. Against the official keys, it made 41 math errors and 22 medical errors. Of the 63 mistakes, 48 accepted a wrong candidate and 15 rejected a correct one. All 63 would have passed through a system that waited for the judge to ask for help.
 
 This left us with zero referrals from the voluntary prompt. Matching every other method to that workload would simply keep all 140 cases in each domain. We therefore evaluated the confidence scores from the four required-verdict runs at three prespecified retention targets. The voluntary prompt has its own result in the text. The figure compares the two methods that actually selected subsets.
 
@@ -104,5 +104,3 @@ The project archive includes the case counts, selection rules and recorded verdi
 [4] Karl Cobbe et al. 2021. Training Verifiers to Solve Math Word Problems. arXiv:2110.14168. https://arxiv.org/abs/2110.14168
 
 [5] Di Jin, Eileen Pan, Nassim Oufattole, Wei-Hung Weng, Hanyi Fang and Peter Szolovits. 2021. What Disease Does This Patient Have? A Large-Scale Open Domain Question Answering Dataset from Medical Exams. Applied Sciences 11(14), 6421. doi:10.3390/app11146421. https://doi.org/10.3390/app11146421
-
-[6] EdithGu. DSC261 judging pipeline skeleton, project collaboration, commit c9f40de. https://github.com/EdithGu/dsc261-llm-judge/tree/c9f40de92fa61309b0cd733dabcfafd9fa5363f2
