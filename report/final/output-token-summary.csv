@@ -1,0 +1,35 @@
+domain,method,prompt,retention_target,cases,second_calls,correct_verdicts,output_tokens,basis
+gsm8k,standalone,C1,,140,0,100,2342,observed
+gsm8k,standalone,C2,,140,0,103,2474,observed
+gsm8k,standalone,C3,,140,0,139,41177,observed
+gsm8k,standalone,C4,,140,0,140,51178,observed
+medqa,standalone,C1,,140,0,119,2334,observed
+medqa,standalone,C2,,140,0,121,2308,observed
+medqa,standalone,C3,,140,0,133,175719,observed
+medqa,standalone,C4,,140,0,132,166743,observed
+gsm8k,abstention permitted,C5,,140,0,99,2757,observed
+medqa,abstention permitted,C5,,140,0,118,2546,observed
+gsm8k,confidence review,C1/C3,0.5,140,71,121,22692,observed replay
+gsm8k,random review,C1/C3,0.5,140,71,119.7786,23224.62,same-count expectation
+gsm8k,confidence review,C1/C3,0.75,140,38,116,14799,observed replay
+gsm8k,random review,C1/C3,0.75,140,38,110.5857,13518.61,same-count expectation
+gsm8k,confidence review,C1/C3,0.9,140,17,109,10900,observed replay
+gsm8k,random review,C1/C3,0.9,140,17,104.7357,7342.06,same-count expectation
+gsm8k,confidence review,C2/C4,0.5,140,71,123,30763,observed replay
+gsm8k,random review,C2/C4,0.5,140,71,121.7643,28428.56,same-count expectation
+gsm8k,confidence review,C2/C4,0.75,140,39,119,20331,observed replay
+gsm8k,random review,C2/C4,0.75,140,39,113.3071,16730.73,same-count expectation
+gsm8k,confidence review,C2/C4,0.9,140,14,110,13656,observed replay
+gsm8k,random review,C2/C4,0.9,140,14,106.7,7591.8,same-count expectation
+medqa,confidence review,C1/C3,0.5,140,76,130,139038,observed replay
+medqa,random review,C1/C3,0.5,140,76,127.6857,97724.31,same-count expectation
+medqa,confidence review,C1/C3,0.75,140,54,129,95815,observed replay
+medqa,random review,C1/C3,0.75,140,54,125.1714,70111.33,same-count expectation
+medqa,confidence review,C1/C3,0.9,140,18,122,35483,observed replay
+medqa,random review,C1/C3,0.9,140,18,121.0571,24926.44,same-count expectation
+medqa,confidence review,C2/C4,0.5,140,58,128,111553,observed replay
+medqa,random review,C2/C4,0.5,140,58,126.3857,71387.24,same-count expectation
+medqa,confidence review,C2/C4,0.75,140,35,125,61314,observed replay
+medqa,random review,C2/C4,0.75,140,35,124.25,43993.75,same-count expectation
+medqa,confidence review,C2/C4,0.9,140,13,123,23497,observed replay
+medqa,random review,C2/C4,0.9,140,13,122.2071,17791.28,same-count expectation

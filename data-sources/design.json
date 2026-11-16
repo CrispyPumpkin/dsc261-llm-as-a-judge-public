@@ -1,0 +1,45 @@
+{
+  "seed": 2612026,
+  "domains": [
+    "gsm8k",
+    "medqa"
+  ],
+  "conditions": [
+    {
+      "id": "C1",
+      "thinking": false,
+      "rubric": false
+    },
+    {
+      "id": "C2",
+      "thinking": false,
+      "rubric": true
+    },
+    {
+      "id": "C3",
+      "thinking": true,
+      "rubric": false
+    },
+    {
+      "id": "C4",
+      "thinking": true,
+      "rubric": true
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 8192,
+  "retention_targets": [
+    0.5,
+    0.75,
+    0.9
+  ],
+  "bootstrap_repeats": 1000,
+  "namespaces": {
+    "selection": "formal-v1/question-selection",
+    "split": "formal-v1/split-assignment",
+    "label": "formal-v1/candidate-label",
+    "wrong": "formal-v1/wrong-candidate",
+    "schedule": "formal-v1/schedule",
+    "inspection": "formal-v1/source-inspection"
+  }
+}

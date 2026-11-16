@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "sources": {
+    "gsm8k": {
+      "repository": "https://github.com/openai/grade-school-math",
+      "revision": "3101c7d5072418e28b9008a6636bde82a006892c",
+      "license": "MIT",
+      "format": "main JSONL"
+    },
+    "medqa": {
+      "repository": "https://github.com/jind11/MedQA",
+      "revision": "27b02f66aac217933c9648a06f82e9f720377925",
+      "license": "MIT repository license; combined archive has no separate license file",
+      "format": "original US English, native five options",
+      "official_link": "https://drive.google.com/file/d/1ImYUSLk9JbgHXOemfvyiDiirluZHPeQw/view?usp=sharing",
+      "archive_file_id": "1ImYUSLk9JbgHXOemfvyiDiirluZHPeQw",
+      "archive_version": "content-addressed SHA-256; public Drive link is mutable",
+      "use": "US question splits only; bundled textbooks are not opened or extracted"
+    }
+  },
+  "files": [
+    {
+      "path": "gsm8k-train.jsonl",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/train.jsonl",
+      "sha256": "17f347dc51477c50d4efb83959dbb7c56297aba886e5544ee2aaed3024813465",
+      "bytes": 4166206
+    },
+    {
+      "path": "gsm8k-test.jsonl",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/grade_school_math/data/test.jsonl",
+      "sha256": "3730d312f6e3440559ace48831e51066acaca737f6eabec99bccb9e4b3c39d14",
+      "bytes": 749738
+    },
+    {
+      "path": "medqa-data_clean.zip",
+      "url": "https://drive.usercontent.google.com/download?id=1ImYUSLk9JbgHXOemfvyiDiirluZHPeQw&export=download",
+      "sha256": "1c2ca8130b3d86d9a99a432ab9bef14f3bb9807bef20facd9ac86ba36960f629",
+      "bytes": 131741885
+    },
+    {
+      "path": "provenance/gsm8k-README.md",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/README.md",
+      "sha256": "27e1676d572f2289210170ff6dbb8c2ef7d9f6950c0f08c978ea8ee6b39dca29",
+      "bytes": 6112
+    },
+    {
+      "path": "provenance/gsm8k-LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/grade-school-math/3101c7d5072418e28b9008a6636bde82a006892c/LICENSE",
+      "sha256": "86bbb73e855821d7c401912fd4bf82e34313e6e3b6fd6f909f2b6cc9e209a53b",
+      "bytes": 1062
+    },
+    {
+      "path": "provenance/medqa-README.md",
+      "url": "https://raw.githubusercontent.com/jind11/MedQA/27b02f66aac217933c9648a06f82e9f720377925/README.md",
+      "sha256": "793b8e2803e876ab59b3f68dded40a36eb63d0043e1adf49224f34fd8b608797",
+      "bytes": 4974
+    },
+    {
+      "path": "provenance/medqa-LICENSE",
+      "url": "https://raw.githubusercontent.com/jind11/MedQA/27b02f66aac217933c9648a06f82e9f720377925/LICENSE",
+      "sha256": "8a35478f13bfaa114cd157592ba06b9a27db0f9767ac1cb9b36d435de6157378",
+      "bytes": 1063
+    }
+  ],
+  "medqa_members": {
+    "train": {
+      "path": "data_clean/questions/US/train.jsonl",
+      "sha256": "f51bf201539f9b451a589c4c3b9de1faaf0f89c6f6f32ea4b2b9377e04e9e356"
+    },
+    "dev": {
+      "path": "data_clean/questions/US/dev.jsonl",
+      "sha256": "6bdc019180ebf82908c5690b6266898341fee5fd3b807ed0201c39c93f3424c6"
+    },
+    "test": {
+      "path": "data_clean/questions/US/test.jsonl",
+      "sha256": "cfa75cbcc53c29b023752b0a395ff49d8202121041392735ae44771a5ec734a3"
+    }
+  }
+}

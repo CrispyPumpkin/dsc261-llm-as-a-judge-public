@@ -1,0 +1,7 @@
+domain,stratum,eligible,case_id,cutoff,confidence,verdict,candidate_correct,retained
+gsm8k,maximum-confidence error,38,00ab545e04b8bb8ae086facbdc2f20f7cb916add050a78443e172cfa37db0a1e,1.0,1.0,Correct,False,True
+gsm8k,flagged error,16,0ca19805367e4fb9d69cdcf4711de60b281cbe846156898b114792c0463f1376,1.0,1.0,Incorrect,True,False
+gsm8k,flagged correct,22,0473bf8b4118b91583c645cc3493f77b7a0d51d33fff1dfdae6783c18d1a5510,1.0,1.0,Correct,True,False
+medqa,maximum-confidence error,6,075fbb52e5652019a34b2f05c0b586c4225c3d49777ae7e96b1adffd60d0c81f,0.95,1.0,Correct,False,True
+medqa,flagged error,13,00b3c0a0bf1564f910d62b868becdc878942b972d460faf06b320181e662876e,0.95,0.95,Incorrect,True,False
+medqa,flagged correct,41,000fef93df81c7bfc41461e477830e79804f43b2da40c20329c208a9afb372b2,0.95,0.95,Incorrect,False,False

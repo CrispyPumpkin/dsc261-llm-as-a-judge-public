@@ -1,0 +1,5171 @@
+{
+  "calibration": [
+    {
+      "case_id": "12b251d92bba96a006fb8733aeb2f16ed79768318ca5a372b53c8edcbebb60d8",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5089c31799fdba1414acbd50843e2ce3afb5e9b01e3ca3215c3b974c0010a561",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "5089c31799fdba1414acbd50843e2ce3afb5e9b01e3ca3215c3b974c0010a561",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "12b251d92bba96a006fb8733aeb2f16ed79768318ca5a372b53c8edcbebb60d8",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5089c31799fdba1414acbd50843e2ce3afb5e9b01e3ca3215c3b974c0010a561",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "12b251d92bba96a006fb8733aeb2f16ed79768318ca5a372b53c8edcbebb60d8",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5089c31799fdba1414acbd50843e2ce3afb5e9b01e3ca3215c3b974c0010a561",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "12b251d92bba96a006fb8733aeb2f16ed79768318ca5a372b53c8edcbebb60d8",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "18a04f7f22c0bddf684c252b1c122ff9d8639e98dee2813d1ec17df3a9a6cfa5",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "4b38b54951e36dfd635298aa41d2da87325957b0977ddf4f8c070fbabf22ba00",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "4b38b54951e36dfd635298aa41d2da87325957b0977ddf4f8c070fbabf22ba00",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "18a04f7f22c0bddf684c252b1c122ff9d8639e98dee2813d1ec17df3a9a6cfa5",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "4b38b54951e36dfd635298aa41d2da87325957b0977ddf4f8c070fbabf22ba00",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "18a04f7f22c0bddf684c252b1c122ff9d8639e98dee2813d1ec17df3a9a6cfa5",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "18a04f7f22c0bddf684c252b1c122ff9d8639e98dee2813d1ec17df3a9a6cfa5",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "4b38b54951e36dfd635298aa41d2da87325957b0977ddf4f8c070fbabf22ba00",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f4437272d8a084f91f27908531dcebe7d4e1b5bd3ec7ee75824be5824da596dd",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "efe19926bbe2af60e3db18ab9c1ae14e3abd12303757a36f4838f4461779c300",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f4437272d8a084f91f27908531dcebe7d4e1b5bd3ec7ee75824be5824da596dd",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "efe19926bbe2af60e3db18ab9c1ae14e3abd12303757a36f4838f4461779c300",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "efe19926bbe2af60e3db18ab9c1ae14e3abd12303757a36f4838f4461779c300",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f4437272d8a084f91f27908531dcebe7d4e1b5bd3ec7ee75824be5824da596dd",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "efe19926bbe2af60e3db18ab9c1ae14e3abd12303757a36f4838f4461779c300",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f4437272d8a084f91f27908531dcebe7d4e1b5bd3ec7ee75824be5824da596dd",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "23156c802e11132b956e3c2ad88716d36a8dd2cc9c07f5568206c36a65b319c5",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e7e97ee136737853166687a67129c4e58b70ca4463ed8f567cc6118bb2c25b29",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e7e97ee136737853166687a67129c4e58b70ca4463ed8f567cc6118bb2c25b29",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "23156c802e11132b956e3c2ad88716d36a8dd2cc9c07f5568206c36a65b319c5",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "23156c802e11132b956e3c2ad88716d36a8dd2cc9c07f5568206c36a65b319c5",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e7e97ee136737853166687a67129c4e58b70ca4463ed8f567cc6118bb2c25b29",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e7e97ee136737853166687a67129c4e58b70ca4463ed8f567cc6118bb2c25b29",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "23156c802e11132b956e3c2ad88716d36a8dd2cc9c07f5568206c36a65b319c5",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0eb9d6cfbfa17a38d1df99a75b74aee7ffe056fbd2cd35a5e576fbda7874700e",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8d6b080e430a4197ea1985d6aa5b697bf1a415d7c7e487ce16ad5aa72e05c9ab",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0eb9d6cfbfa17a38d1df99a75b74aee7ffe056fbd2cd35a5e576fbda7874700e",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8d6b080e430a4197ea1985d6aa5b697bf1a415d7c7e487ce16ad5aa72e05c9ab",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0eb9d6cfbfa17a38d1df99a75b74aee7ffe056fbd2cd35a5e576fbda7874700e",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8d6b080e430a4197ea1985d6aa5b697bf1a415d7c7e487ce16ad5aa72e05c9ab",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8d6b080e430a4197ea1985d6aa5b697bf1a415d7c7e487ce16ad5aa72e05c9ab",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0eb9d6cfbfa17a38d1df99a75b74aee7ffe056fbd2cd35a5e576fbda7874700e",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "1be42d5acbaefae5e2f0e4fb5f3736c3e85a56c7a37f9cb22fde140706534917",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "313f45df88d08511f05dfe8c8ce0afff25676c8dd2f57acefec9eeecd593e06d",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "1be42d5acbaefae5e2f0e4fb5f3736c3e85a56c7a37f9cb22fde140706534917",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "313f45df88d08511f05dfe8c8ce0afff25676c8dd2f57acefec9eeecd593e06d",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "1be42d5acbaefae5e2f0e4fb5f3736c3e85a56c7a37f9cb22fde140706534917",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "313f45df88d08511f05dfe8c8ce0afff25676c8dd2f57acefec9eeecd593e06d",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "1be42d5acbaefae5e2f0e4fb5f3736c3e85a56c7a37f9cb22fde140706534917",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "313f45df88d08511f05dfe8c8ce0afff25676c8dd2f57acefec9eeecd593e06d",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0abd089ff008759634d3c8425b2a8bd45196f79446ed4afcb9690667b0cdd05b",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "80c3681e9726d9afd97b91bf402558348459672c53a95760911f793829f43f2a",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "80c3681e9726d9afd97b91bf402558348459672c53a95760911f793829f43f2a",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0abd089ff008759634d3c8425b2a8bd45196f79446ed4afcb9690667b0cdd05b",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0abd089ff008759634d3c8425b2a8bd45196f79446ed4afcb9690667b0cdd05b",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "80c3681e9726d9afd97b91bf402558348459672c53a95760911f793829f43f2a",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0abd089ff008759634d3c8425b2a8bd45196f79446ed4afcb9690667b0cdd05b",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "80c3681e9726d9afd97b91bf402558348459672c53a95760911f793829f43f2a",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "4c5208d0691b467d8539211c0847c44542e3b8da41d81138d8505efe095c2d03",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "57481086da98bbbdd5b3b18523a578ea1675c9df61ac0f35d86e979bee2e471c",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "4c5208d0691b467d8539211c0847c44542e3b8da41d81138d8505efe095c2d03",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "57481086da98bbbdd5b3b18523a578ea1675c9df61ac0f35d86e979bee2e471c",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "4c5208d0691b467d8539211c0847c44542e3b8da41d81138d8505efe095c2d03",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "57481086da98bbbdd5b3b18523a578ea1675c9df61ac0f35d86e979bee2e471c",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "57481086da98bbbdd5b3b18523a578ea1675c9df61ac0f35d86e979bee2e471c",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "4c5208d0691b467d8539211c0847c44542e3b8da41d81138d8505efe095c2d03",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "d59c93dafbe79eb21ac23a479287902434a9a4bee43391e2ffaed6de2845fa0b",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "724756d8f3c988ff7a5662b58880430d9882719c5874e456c924491dcb536881",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "724756d8f3c988ff7a5662b58880430d9882719c5874e456c924491dcb536881",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d59c93dafbe79eb21ac23a479287902434a9a4bee43391e2ffaed6de2845fa0b",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "724756d8f3c988ff7a5662b58880430d9882719c5874e456c924491dcb536881",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d59c93dafbe79eb21ac23a479287902434a9a4bee43391e2ffaed6de2845fa0b",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "724756d8f3c988ff7a5662b58880430d9882719c5874e456c924491dcb536881",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d59c93dafbe79eb21ac23a479287902434a9a4bee43391e2ffaed6de2845fa0b",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "6c6ef152395b41c36c0cb278d72db7a7c62fb5d4cde1bfa9994b059883528699",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "cb0d964b6c539edbb48cd802fe6c65b3c9ee8e046221030d89ab61b1a1d2bcc2",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6c6ef152395b41c36c0cb278d72db7a7c62fb5d4cde1bfa9994b059883528699",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "cb0d964b6c539edbb48cd802fe6c65b3c9ee8e046221030d89ab61b1a1d2bcc2",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6c6ef152395b41c36c0cb278d72db7a7c62fb5d4cde1bfa9994b059883528699",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "cb0d964b6c539edbb48cd802fe6c65b3c9ee8e046221030d89ab61b1a1d2bcc2",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6c6ef152395b41c36c0cb278d72db7a7c62fb5d4cde1bfa9994b059883528699",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "cb0d964b6c539edbb48cd802fe6c65b3c9ee8e046221030d89ab61b1a1d2bcc2",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "41d256b20cc9f71c41406861962b8232ff05a0f9c90ec8f9c98396da5029f88c",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bc83fd11e5b6e2d55441609fa277e65f95f2fe1a3b6f6a2c7a84fecc8630e223",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "bc83fd11e5b6e2d55441609fa277e65f95f2fe1a3b6f6a2c7a84fecc8630e223",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "41d256b20cc9f71c41406861962b8232ff05a0f9c90ec8f9c98396da5029f88c",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bc83fd11e5b6e2d55441609fa277e65f95f2fe1a3b6f6a2c7a84fecc8630e223",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "41d256b20cc9f71c41406861962b8232ff05a0f9c90ec8f9c98396da5029f88c",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bc83fd11e5b6e2d55441609fa277e65f95f2fe1a3b6f6a2c7a84fecc8630e223",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "41d256b20cc9f71c41406861962b8232ff05a0f9c90ec8f9c98396da5029f88c",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7c7755d37b7b0ebfbc562b486e1e9d44c3150b969f2fc0c45fa49e04da1a3210",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1e2799aae5f6d2a7c3c1f6e81c9ae08724c1ae4f48dceedcdd60c0452e655e17",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7c7755d37b7b0ebfbc562b486e1e9d44c3150b969f2fc0c45fa49e04da1a3210",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1e2799aae5f6d2a7c3c1f6e81c9ae08724c1ae4f48dceedcdd60c0452e655e17",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1e2799aae5f6d2a7c3c1f6e81c9ae08724c1ae4f48dceedcdd60c0452e655e17",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7c7755d37b7b0ebfbc562b486e1e9d44c3150b969f2fc0c45fa49e04da1a3210",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1e2799aae5f6d2a7c3c1f6e81c9ae08724c1ae4f48dceedcdd60c0452e655e17",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7c7755d37b7b0ebfbc562b486e1e9d44c3150b969f2fc0c45fa49e04da1a3210",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "db060f2bebabcca857094ee523a2d0c63e8148a7f2a82008e28e3156f8c49d2f",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b15a96d431518786db3ac9c20b9e70faedcc74d9f9c0876fe6ab38db15aeff80",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b15a96d431518786db3ac9c20b9e70faedcc74d9f9c0876fe6ab38db15aeff80",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "db060f2bebabcca857094ee523a2d0c63e8148a7f2a82008e28e3156f8c49d2f",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b15a96d431518786db3ac9c20b9e70faedcc74d9f9c0876fe6ab38db15aeff80",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "db060f2bebabcca857094ee523a2d0c63e8148a7f2a82008e28e3156f8c49d2f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b15a96d431518786db3ac9c20b9e70faedcc74d9f9c0876fe6ab38db15aeff80",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "db060f2bebabcca857094ee523a2d0c63e8148a7f2a82008e28e3156f8c49d2f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3cc38deb41fa1ceb381be530844361faf66d9083ba6bd3dc1dad1688c017d7ec",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "088fcbf5f7db1aaa2d06a8ef91f8c39f2bafa88e623fecea04386b5bf30a1b04",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "088fcbf5f7db1aaa2d06a8ef91f8c39f2bafa88e623fecea04386b5bf30a1b04",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3cc38deb41fa1ceb381be530844361faf66d9083ba6bd3dc1dad1688c017d7ec",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "088fcbf5f7db1aaa2d06a8ef91f8c39f2bafa88e623fecea04386b5bf30a1b04",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3cc38deb41fa1ceb381be530844361faf66d9083ba6bd3dc1dad1688c017d7ec",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "088fcbf5f7db1aaa2d06a8ef91f8c39f2bafa88e623fecea04386b5bf30a1b04",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3cc38deb41fa1ceb381be530844361faf66d9083ba6bd3dc1dad1688c017d7ec",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "194e942527dab821cd6b83bfc6bd41bc8610b38385e6d8ab6253444117d53511",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1484a3cd02046c99da61eb8ceb33228e2a3b1205963d4a5e777e2fb1e031dbc0",
+      "classification": "truncated",
+      "condition": "C4",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "1484a3cd02046c99da61eb8ceb33228e2a3b1205963d4a5e777e2fb1e031dbc0",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "194e942527dab821cd6b83bfc6bd41bc8610b38385e6d8ab6253444117d53511",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "194e942527dab821cd6b83bfc6bd41bc8610b38385e6d8ab6253444117d53511",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1484a3cd02046c99da61eb8ceb33228e2a3b1205963d4a5e777e2fb1e031dbc0",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "194e942527dab821cd6b83bfc6bd41bc8610b38385e6d8ab6253444117d53511",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "1484a3cd02046c99da61eb8ceb33228e2a3b1205963d4a5e777e2fb1e031dbc0",
+      "classification": "truncated",
+      "condition": "C3",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "516cb7f99cf5499f81c6e3d3ff12eda00ec6cde771b7e3174f88253cfa3d6560",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "2b2b6df8ca89c0c1ae66f61f026acab83865e75f931d90bf1999c97a522d7457",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "516cb7f99cf5499f81c6e3d3ff12eda00ec6cde771b7e3174f88253cfa3d6560",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "2b2b6df8ca89c0c1ae66f61f026acab83865e75f931d90bf1999c97a522d7457",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "516cb7f99cf5499f81c6e3d3ff12eda00ec6cde771b7e3174f88253cfa3d6560",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "2b2b6df8ca89c0c1ae66f61f026acab83865e75f931d90bf1999c97a522d7457",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "2b2b6df8ca89c0c1ae66f61f026acab83865e75f931d90bf1999c97a522d7457",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "516cb7f99cf5499f81c6e3d3ff12eda00ec6cde771b7e3174f88253cfa3d6560",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ec9442545dc09b5eae8602423c969f900360563bed72ae6a3a24ca7973f09d7",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "37effa55dd69790266bd53e9d8ddba942acb16a588bfcf7cd2c442c5f97f00c7",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "37effa55dd69790266bd53e9d8ddba942acb16a588bfcf7cd2c442c5f97f00c7",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ec9442545dc09b5eae8602423c969f900360563bed72ae6a3a24ca7973f09d7",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "37effa55dd69790266bd53e9d8ddba942acb16a588bfcf7cd2c442c5f97f00c7",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ec9442545dc09b5eae8602423c969f900360563bed72ae6a3a24ca7973f09d7",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "37effa55dd69790266bd53e9d8ddba942acb16a588bfcf7cd2c442c5f97f00c7",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ec9442545dc09b5eae8602423c969f900360563bed72ae6a3a24ca7973f09d7",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "241637e6078becb17401b503b59c29134b0f1a9de128dff28066672a96805a2d",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d85918bf5aa2c884278b46e58feba8fb645039be54ec2233a8597223a501ae9",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d85918bf5aa2c884278b46e58feba8fb645039be54ec2233a8597223a501ae9",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "241637e6078becb17401b503b59c29134b0f1a9de128dff28066672a96805a2d",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d85918bf5aa2c884278b46e58feba8fb645039be54ec2233a8597223a501ae9",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "241637e6078becb17401b503b59c29134b0f1a9de128dff28066672a96805a2d",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d85918bf5aa2c884278b46e58feba8fb645039be54ec2233a8597223a501ae9",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "241637e6078becb17401b503b59c29134b0f1a9de128dff28066672a96805a2d",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e990d91026badcceedd6bba7c734f380d2715d969af82333c76519ca0802f5eb",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f0fec59fd223db59ed3859a63c00653f550b20dff6d580121e97e3aad9f98595",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f0fec59fd223db59ed3859a63c00653f550b20dff6d580121e97e3aad9f98595",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e990d91026badcceedd6bba7c734f380d2715d969af82333c76519ca0802f5eb",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e990d91026badcceedd6bba7c734f380d2715d969af82333c76519ca0802f5eb",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f0fec59fd223db59ed3859a63c00653f550b20dff6d580121e97e3aad9f98595",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f0fec59fd223db59ed3859a63c00653f550b20dff6d580121e97e3aad9f98595",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e990d91026badcceedd6bba7c734f380d2715d969af82333c76519ca0802f5eb",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "cd63e6f32a73397f440216af17224c9c8a35372faed2e8d04be5fb1aca97197a",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "dbf929175ba8b1e5f5d3685ac59a2fd3829f69c7c7ba7da4e1472c95d3babe2e",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "dbf929175ba8b1e5f5d3685ac59a2fd3829f69c7c7ba7da4e1472c95d3babe2e",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "cd63e6f32a73397f440216af17224c9c8a35372faed2e8d04be5fb1aca97197a",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "dbf929175ba8b1e5f5d3685ac59a2fd3829f69c7c7ba7da4e1472c95d3babe2e",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "cd63e6f32a73397f440216af17224c9c8a35372faed2e8d04be5fb1aca97197a",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "dbf929175ba8b1e5f5d3685ac59a2fd3829f69c7c7ba7da4e1472c95d3babe2e",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "cd63e6f32a73397f440216af17224c9c8a35372faed2e8d04be5fb1aca97197a",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7701148d64d0b7708222ed5555ee0acb0ea4ba8f6f0360cbbc13d71bb89e7cec",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3611e8001d798c681ad9ccabc2f8d6c77591200bf6a6788e2b10688ee74bbc2b",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3611e8001d798c681ad9ccabc2f8d6c77591200bf6a6788e2b10688ee74bbc2b",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7701148d64d0b7708222ed5555ee0acb0ea4ba8f6f0360cbbc13d71bb89e7cec",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7701148d64d0b7708222ed5555ee0acb0ea4ba8f6f0360cbbc13d71bb89e7cec",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3611e8001d798c681ad9ccabc2f8d6c77591200bf6a6788e2b10688ee74bbc2b",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3611e8001d798c681ad9ccabc2f8d6c77591200bf6a6788e2b10688ee74bbc2b",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7701148d64d0b7708222ed5555ee0acb0ea4ba8f6f0360cbbc13d71bb89e7cec",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9ae7560fda9d1a2ea0d3964f471b0c00d03e40205e5138892e60f4792cafe6e5",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "c0356b6762a081c89a1fd395b8f7f05e8921248658f03d25f3c255ab3b238652",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9ae7560fda9d1a2ea0d3964f471b0c00d03e40205e5138892e60f4792cafe6e5",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "c0356b6762a081c89a1fd395b8f7f05e8921248658f03d25f3c255ab3b238652",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9ae7560fda9d1a2ea0d3964f471b0c00d03e40205e5138892e60f4792cafe6e5",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "c0356b6762a081c89a1fd395b8f7f05e8921248658f03d25f3c255ab3b238652",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "c0356b6762a081c89a1fd395b8f7f05e8921248658f03d25f3c255ab3b238652",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9ae7560fda9d1a2ea0d3964f471b0c00d03e40205e5138892e60f4792cafe6e5",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "70c1d49c4d57dd2b41790dba704538182c4f91e8c15b8696f054518fe7a4763b",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "75df28552339721e0fca40c2aee3de617553d24b3406ae368e0e921679b432f3",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "70c1d49c4d57dd2b41790dba704538182c4f91e8c15b8696f054518fe7a4763b",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "75df28552339721e0fca40c2aee3de617553d24b3406ae368e0e921679b432f3",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "75df28552339721e0fca40c2aee3de617553d24b3406ae368e0e921679b432f3",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "70c1d49c4d57dd2b41790dba704538182c4f91e8c15b8696f054518fe7a4763b",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "70c1d49c4d57dd2b41790dba704538182c4f91e8c15b8696f054518fe7a4763b",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "75df28552339721e0fca40c2aee3de617553d24b3406ae368e0e921679b432f3",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5591ea3e25a3ad95befdd7394a5e010aecc5d60cd7efb584a0b75d80c7109c32",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f2565032528f1dc8cb2ed89d111fd3055b38eeb707c9d8ef9f4596ff412d89bf",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "5591ea3e25a3ad95befdd7394a5e010aecc5d60cd7efb584a0b75d80c7109c32",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f2565032528f1dc8cb2ed89d111fd3055b38eeb707c9d8ef9f4596ff412d89bf",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f2565032528f1dc8cb2ed89d111fd3055b38eeb707c9d8ef9f4596ff412d89bf",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5591ea3e25a3ad95befdd7394a5e010aecc5d60cd7efb584a0b75d80c7109c32",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5591ea3e25a3ad95befdd7394a5e010aecc5d60cd7efb584a0b75d80c7109c32",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f2565032528f1dc8cb2ed89d111fd3055b38eeb707c9d8ef9f4596ff412d89bf",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "bb70be54935108b0d447a4f32a429a6cbe8f54083e7199a94845d0859ff3143d",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f455f1a0ac21dc5e36b429ea940f006d5b2c9d73a09c812eba3e1940cae1a363",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bb70be54935108b0d447a4f32a429a6cbe8f54083e7199a94845d0859ff3143d",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f455f1a0ac21dc5e36b429ea940f006d5b2c9d73a09c812eba3e1940cae1a363",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bb70be54935108b0d447a4f32a429a6cbe8f54083e7199a94845d0859ff3143d",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f455f1a0ac21dc5e36b429ea940f006d5b2c9d73a09c812eba3e1940cae1a363",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bb70be54935108b0d447a4f32a429a6cbe8f54083e7199a94845d0859ff3143d",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f455f1a0ac21dc5e36b429ea940f006d5b2c9d73a09c812eba3e1940cae1a363",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "35e920570ab4d28421e6a06cd52bdb16a07bfd5d3cc981dddfc532e1a69bfb9f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9a7479762ed538abd111cd43cb6a5a503c1aede1a6023dc916346c775a1b0f6a",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9a7479762ed538abd111cd43cb6a5a503c1aede1a6023dc916346c775a1b0f6a",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "35e920570ab4d28421e6a06cd52bdb16a07bfd5d3cc981dddfc532e1a69bfb9f",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9a7479762ed538abd111cd43cb6a5a503c1aede1a6023dc916346c775a1b0f6a",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "35e920570ab4d28421e6a06cd52bdb16a07bfd5d3cc981dddfc532e1a69bfb9f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9a7479762ed538abd111cd43cb6a5a503c1aede1a6023dc916346c775a1b0f6a",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "35e920570ab4d28421e6a06cd52bdb16a07bfd5d3cc981dddfc532e1a69bfb9f",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b2787fdd3e6e71d5985cec84b81091def108fc3d30a53c1f3b09d9cec1248fe8",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0238a87902208b17ae84e0dfe61e4de7260b450287796ca7c8ff8f7323cb4b9c",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0238a87902208b17ae84e0dfe61e4de7260b450287796ca7c8ff8f7323cb4b9c",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b2787fdd3e6e71d5985cec84b81091def108fc3d30a53c1f3b09d9cec1248fe8",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0238a87902208b17ae84e0dfe61e4de7260b450287796ca7c8ff8f7323cb4b9c",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b2787fdd3e6e71d5985cec84b81091def108fc3d30a53c1f3b09d9cec1248fe8",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b2787fdd3e6e71d5985cec84b81091def108fc3d30a53c1f3b09d9cec1248fe8",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0238a87902208b17ae84e0dfe61e4de7260b450287796ca7c8ff8f7323cb4b9c",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e2e7b4d0a27c04a2428ba8f4b9f63fb0342c8f760fcc34ec2233cacd7ea1ddf7",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a86dcca30c0f3e57ae5ffd563a5ae27cdff156c20e6abd25fe1cab3b4a71f3ba",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e2e7b4d0a27c04a2428ba8f4b9f63fb0342c8f760fcc34ec2233cacd7ea1ddf7",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a86dcca30c0f3e57ae5ffd563a5ae27cdff156c20e6abd25fe1cab3b4a71f3ba",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e2e7b4d0a27c04a2428ba8f4b9f63fb0342c8f760fcc34ec2233cacd7ea1ddf7",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a86dcca30c0f3e57ae5ffd563a5ae27cdff156c20e6abd25fe1cab3b4a71f3ba",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e2e7b4d0a27c04a2428ba8f4b9f63fb0342c8f760fcc34ec2233cacd7ea1ddf7",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a86dcca30c0f3e57ae5ffd563a5ae27cdff156c20e6abd25fe1cab3b4a71f3ba",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0ed0addf8e28a8b6c0a72305580932e388ff19c61527ada6c88497853e588972",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "beda9917d9f90f8b76335f3d9f39a703bf67bd6d1c5b6b47b7a1fbc4f6089b9e",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0ed0addf8e28a8b6c0a72305580932e388ff19c61527ada6c88497853e588972",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "beda9917d9f90f8b76335f3d9f39a703bf67bd6d1c5b6b47b7a1fbc4f6089b9e",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0ed0addf8e28a8b6c0a72305580932e388ff19c61527ada6c88497853e588972",
+      "classification": "truncated",
+      "condition": "C4",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "beda9917d9f90f8b76335f3d9f39a703bf67bd6d1c5b6b47b7a1fbc4f6089b9e",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0ed0addf8e28a8b6c0a72305580932e388ff19c61527ada6c88497853e588972",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "beda9917d9f90f8b76335f3d9f39a703bf67bd6d1c5b6b47b7a1fbc4f6089b9e",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e7cad3f45dc23d697ecf5e895f0a5f6575fb6ca7da73006d2beb5f17db8cd848",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "659873eeaff00a24714cd02d783c010afa08c869a3db618d7a4efe89a7086317",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e7cad3f45dc23d697ecf5e895f0a5f6575fb6ca7da73006d2beb5f17db8cd848",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "659873eeaff00a24714cd02d783c010afa08c869a3db618d7a4efe89a7086317",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e7cad3f45dc23d697ecf5e895f0a5f6575fb6ca7da73006d2beb5f17db8cd848",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "659873eeaff00a24714cd02d783c010afa08c869a3db618d7a4efe89a7086317",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e7cad3f45dc23d697ecf5e895f0a5f6575fb6ca7da73006d2beb5f17db8cd848",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "659873eeaff00a24714cd02d783c010afa08c869a3db618d7a4efe89a7086317",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3ddc81bb72d9329529d22a553fbd53248199035956446776eaa6d6f376db4219",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "818f8264b31c9e974cf8b72a2694728fa7242117c5df6cb4b2b6c6d89ec18ef5",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3ddc81bb72d9329529d22a553fbd53248199035956446776eaa6d6f376db4219",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "818f8264b31c9e974cf8b72a2694728fa7242117c5df6cb4b2b6c6d89ec18ef5",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "818f8264b31c9e974cf8b72a2694728fa7242117c5df6cb4b2b6c6d89ec18ef5",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3ddc81bb72d9329529d22a553fbd53248199035956446776eaa6d6f376db4219",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "818f8264b31c9e974cf8b72a2694728fa7242117c5df6cb4b2b6c6d89ec18ef5",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3ddc81bb72d9329529d22a553fbd53248199035956446776eaa6d6f376db4219",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3c15825b483b9eddc97f396f70906315f6a8eb2fbf46c4d6eb2742511b9f607e",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "8e70c8146b61ea19fec0613652180751aa5f6ec9aa8cfb87aa8b5cf622569c43",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3c15825b483b9eddc97f396f70906315f6a8eb2fbf46c4d6eb2742511b9f607e",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "8e70c8146b61ea19fec0613652180751aa5f6ec9aa8cfb87aa8b5cf622569c43",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8e70c8146b61ea19fec0613652180751aa5f6ec9aa8cfb87aa8b5cf622569c43",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "3c15825b483b9eddc97f396f70906315f6a8eb2fbf46c4d6eb2742511b9f607e",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "3c15825b483b9eddc97f396f70906315f6a8eb2fbf46c4d6eb2742511b9f607e",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "8e70c8146b61ea19fec0613652180751aa5f6ec9aa8cfb87aa8b5cf622569c43",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a7307ca99c872ba7d6c27d41f788832412a27655fe76ada3a363ff70a54dfe4b",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "08646d3b23526c66dda026f403ad431b85d5cf3cf8c8eb8c9e47223e2b4d28b9",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a7307ca99c872ba7d6c27d41f788832412a27655fe76ada3a363ff70a54dfe4b",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "08646d3b23526c66dda026f403ad431b85d5cf3cf8c8eb8c9e47223e2b4d28b9",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a7307ca99c872ba7d6c27d41f788832412a27655fe76ada3a363ff70a54dfe4b",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "08646d3b23526c66dda026f403ad431b85d5cf3cf8c8eb8c9e47223e2b4d28b9",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "08646d3b23526c66dda026f403ad431b85d5cf3cf8c8eb8c9e47223e2b4d28b9",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a7307ca99c872ba7d6c27d41f788832412a27655fe76ada3a363ff70a54dfe4b",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9faed0c7d180a5692dffaa33d3f005447e9eb7359c7c5f4706033a6f5f7c4aa2",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "322b767d348b9e6eceff566dcb109f669ff057e088294046be002bd37e8d7ea7",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "322b767d348b9e6eceff566dcb109f669ff057e088294046be002bd37e8d7ea7",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9faed0c7d180a5692dffaa33d3f005447e9eb7359c7c5f4706033a6f5f7c4aa2",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "322b767d348b9e6eceff566dcb109f669ff057e088294046be002bd37e8d7ea7",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9faed0c7d180a5692dffaa33d3f005447e9eb7359c7c5f4706033a6f5f7c4aa2",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9faed0c7d180a5692dffaa33d3f005447e9eb7359c7c5f4706033a6f5f7c4aa2",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "322b767d348b9e6eceff566dcb109f669ff057e088294046be002bd37e8d7ea7",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0e5023e60bad7a8d621aca3082b93cfbef9a9bae9c9d58abb1a92c11c0229887",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "ce3f23a38a240d36d068b790dd0bd87ccbb86c0c08314a00f97747474ceecf05",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ce3f23a38a240d36d068b790dd0bd87ccbb86c0c08314a00f97747474ceecf05",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0e5023e60bad7a8d621aca3082b93cfbef9a9bae9c9d58abb1a92c11c0229887",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0e5023e60bad7a8d621aca3082b93cfbef9a9bae9c9d58abb1a92c11c0229887",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "ce3f23a38a240d36d068b790dd0bd87ccbb86c0c08314a00f97747474ceecf05",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0e5023e60bad7a8d621aca3082b93cfbef9a9bae9c9d58abb1a92c11c0229887",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "ce3f23a38a240d36d068b790dd0bd87ccbb86c0c08314a00f97747474ceecf05",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "002400ae8fc47616bec92d795988cdd95bcd8f7472e212f535fe7ac42f8b6f5f",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "70f289312c326f08e034fa9f6f23c9428c0d4d37389619f2e249a28be53bc2c8",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.85,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "002400ae8fc47616bec92d795988cdd95bcd8f7472e212f535fe7ac42f8b6f5f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "70f289312c326f08e034fa9f6f23c9428c0d4d37389619f2e249a28be53bc2c8",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "002400ae8fc47616bec92d795988cdd95bcd8f7472e212f535fe7ac42f8b6f5f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "70f289312c326f08e034fa9f6f23c9428c0d4d37389619f2e249a28be53bc2c8",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "70f289312c326f08e034fa9f6f23c9428c0d4d37389619f2e249a28be53bc2c8",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.92,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "002400ae8fc47616bec92d795988cdd95bcd8f7472e212f535fe7ac42f8b6f5f",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9be32d1922eb83c5bc56d35975ac4f3d25aa2453d455442bb7a4f7a6560bbeb1",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a1321edb1955714cd46fdf1e492f780fca53bac3373d6fd7fd2c6841c8102f40",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a1321edb1955714cd46fdf1e492f780fca53bac3373d6fd7fd2c6841c8102f40",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9be32d1922eb83c5bc56d35975ac4f3d25aa2453d455442bb7a4f7a6560bbeb1",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.92,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a1321edb1955714cd46fdf1e492f780fca53bac3373d6fd7fd2c6841c8102f40",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9be32d1922eb83c5bc56d35975ac4f3d25aa2453d455442bb7a4f7a6560bbeb1",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a1321edb1955714cd46fdf1e492f780fca53bac3373d6fd7fd2c6841c8102f40",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9be32d1922eb83c5bc56d35975ac4f3d25aa2453d455442bb7a4f7a6560bbeb1",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5b7e271365d08f1cc5848479b66b6b46c18e63d59716af3829f94c326b7c907f",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "67a640ec07597c5f18fa4aa73189e1f7840c01d03cdb66cfd70ad21046853b22",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "67a640ec07597c5f18fa4aa73189e1f7840c01d03cdb66cfd70ad21046853b22",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "5b7e271365d08f1cc5848479b66b6b46c18e63d59716af3829f94c326b7c907f",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "67a640ec07597c5f18fa4aa73189e1f7840c01d03cdb66cfd70ad21046853b22",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "5b7e271365d08f1cc5848479b66b6b46c18e63d59716af3829f94c326b7c907f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5b7e271365d08f1cc5848479b66b6b46c18e63d59716af3829f94c326b7c907f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "67a640ec07597c5f18fa4aa73189e1f7840c01d03cdb66cfd70ad21046853b22",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ef9034e3c8ab4a339ddbe2ca997d040d73ece852b752584dd5b904a269a33127",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e6f27e40aed3d900279df7650b07631849c4dbb271214dd340c7644b226a41b8",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ef9034e3c8ab4a339ddbe2ca997d040d73ece852b752584dd5b904a269a33127",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e6f27e40aed3d900279df7650b07631849c4dbb271214dd340c7644b226a41b8",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ef9034e3c8ab4a339ddbe2ca997d040d73ece852b752584dd5b904a269a33127",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e6f27e40aed3d900279df7650b07631849c4dbb271214dd340c7644b226a41b8",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ef9034e3c8ab4a339ddbe2ca997d040d73ece852b752584dd5b904a269a33127",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e6f27e40aed3d900279df7650b07631849c4dbb271214dd340c7644b226a41b8",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9a8495a74f5a6abb48251c773df3ee98a1fead35a53a4adcefc562b564acf517",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "834953487b1a11c0a696813628c105807c02371dff754f5ef099d4854cb478bc",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "834953487b1a11c0a696813628c105807c02371dff754f5ef099d4854cb478bc",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9a8495a74f5a6abb48251c773df3ee98a1fead35a53a4adcefc562b564acf517",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "834953487b1a11c0a696813628c105807c02371dff754f5ef099d4854cb478bc",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9a8495a74f5a6abb48251c773df3ee98a1fead35a53a4adcefc562b564acf517",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "834953487b1a11c0a696813628c105807c02371dff754f5ef099d4854cb478bc",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9a8495a74f5a6abb48251c773df3ee98a1fead35a53a4adcefc562b564acf517",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "ac94a1fca7133166e7dfbbecb6ca7492293e4f828cc10dc3d7a0e2df3d36b871",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "25ba2f51551cb4e83833295cf22f4586577776cdae2accc7488ff906c0ba42e0",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "25ba2f51551cb4e83833295cf22f4586577776cdae2accc7488ff906c0ba42e0",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ac94a1fca7133166e7dfbbecb6ca7492293e4f828cc10dc3d7a0e2df3d36b871",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "25ba2f51551cb4e83833295cf22f4586577776cdae2accc7488ff906c0ba42e0",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ac94a1fca7133166e7dfbbecb6ca7492293e4f828cc10dc3d7a0e2df3d36b871",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "25ba2f51551cb4e83833295cf22f4586577776cdae2accc7488ff906c0ba42e0",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "ac94a1fca7133166e7dfbbecb6ca7492293e4f828cc10dc3d7a0e2df3d36b871",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "8c1e8e538385fd4b5bed257bd9037b7fef797f26bba4eb9b660968971c747329",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.92,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "0e3af6be9f1e5122a1b8c6d357add25016d2a6dbbd91d37f96fa908510aa4dd6",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0e3af6be9f1e5122a1b8c6d357add25016d2a6dbbd91d37f96fa908510aa4dd6",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8c1e8e538385fd4b5bed257bd9037b7fef797f26bba4eb9b660968971c747329",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0e3af6be9f1e5122a1b8c6d357add25016d2a6dbbd91d37f96fa908510aa4dd6",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "8c1e8e538385fd4b5bed257bd9037b7fef797f26bba4eb9b660968971c747329",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.85,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "8c1e8e538385fd4b5bed257bd9037b7fef797f26bba4eb9b660968971c747329",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0e3af6be9f1e5122a1b8c6d357add25016d2a6dbbd91d37f96fa908510aa4dd6",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5aaccf7294a056035a61ae337a4f49925c45800d6df662b4371fd75cabc12b7c",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.85,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "80f28974a85e47b011532f3edb6430e5663ccbf7e7700a6fcbd4373624126448",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5aaccf7294a056035a61ae337a4f49925c45800d6df662b4371fd75cabc12b7c",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "80f28974a85e47b011532f3edb6430e5663ccbf7e7700a6fcbd4373624126448",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "80f28974a85e47b011532f3edb6430e5663ccbf7e7700a6fcbd4373624126448",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5aaccf7294a056035a61ae337a4f49925c45800d6df662b4371fd75cabc12b7c",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5aaccf7294a056035a61ae337a4f49925c45800d6df662b4371fd75cabc12b7c",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "80f28974a85e47b011532f3edb6430e5663ccbf7e7700a6fcbd4373624126448",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7c70a3e96e194ac9eb80a2b045daf9b91d32527c4c8e4889a26e6fb5ad24d4b1",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "37f3fbc3f1a3a67860c23b3dfb3d7a9f56fffc4d7215e9e851fc531ea5e4b76d",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7c70a3e96e194ac9eb80a2b045daf9b91d32527c4c8e4889a26e6fb5ad24d4b1",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "37f3fbc3f1a3a67860c23b3dfb3d7a9f56fffc4d7215e9e851fc531ea5e4b76d",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "37f3fbc3f1a3a67860c23b3dfb3d7a9f56fffc4d7215e9e851fc531ea5e4b76d",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7c70a3e96e194ac9eb80a2b045daf9b91d32527c4c8e4889a26e6fb5ad24d4b1",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "37f3fbc3f1a3a67860c23b3dfb3d7a9f56fffc4d7215e9e851fc531ea5e4b76d",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "7c70a3e96e194ac9eb80a2b045daf9b91d32527c4c8e4889a26e6fb5ad24d4b1",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "6608e7e50dc978429b555717fafd66b39a180e66add28b26be463a3cce6bd288",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "43a75c06d8d27c81035ca6298a0b84baf169d9e16312856ebc36a1d6c6d33d02",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6608e7e50dc978429b555717fafd66b39a180e66add28b26be463a3cce6bd288",
+      "classification": "truncated",
+      "condition": "C3",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "43a75c06d8d27c81035ca6298a0b84baf169d9e16312856ebc36a1d6c6d33d02",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6608e7e50dc978429b555717fafd66b39a180e66add28b26be463a3cce6bd288",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.9,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "43a75c06d8d27c81035ca6298a0b84baf169d9e16312856ebc36a1d6c6d33d02",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "43a75c06d8d27c81035ca6298a0b84baf169d9e16312856ebc36a1d6c6d33d02",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6608e7e50dc978429b555717fafd66b39a180e66add28b26be463a3cce6bd288",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "76ccf71e7d4e735c6ee8de9113be2322e431ecce27e81a087070571c7aa065f4",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "d29bf08ef26f31984132db550b54c25b392bed4222b36a73ccc218ebc0ec6295",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "76ccf71e7d4e735c6ee8de9113be2322e431ecce27e81a087070571c7aa065f4",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "d29bf08ef26f31984132db550b54c25b392bed4222b36a73ccc218ebc0ec6295",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "76ccf71e7d4e735c6ee8de9113be2322e431ecce27e81a087070571c7aa065f4",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d29bf08ef26f31984132db550b54c25b392bed4222b36a73ccc218ebc0ec6295",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "76ccf71e7d4e735c6ee8de9113be2322e431ecce27e81a087070571c7aa065f4",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "d29bf08ef26f31984132db550b54c25b392bed4222b36a73ccc218ebc0ec6295",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "41d5beb8152d4ac0cfaeb1f7067c00cf4cbe544dbb7a44dbdb890b6b5867659f",
+      "classification": "truncated",
+      "condition": "C4",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "4ec71cccc6eeb008ed3a91ff9705d133d73b67a9305fd0d7709fe49b5ed3109d",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "41d5beb8152d4ac0cfaeb1f7067c00cf4cbe544dbb7a44dbdb890b6b5867659f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "4ec71cccc6eeb008ed3a91ff9705d133d73b67a9305fd0d7709fe49b5ed3109d",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "4ec71cccc6eeb008ed3a91ff9705d133d73b67a9305fd0d7709fe49b5ed3109d",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "41d5beb8152d4ac0cfaeb1f7067c00cf4cbe544dbb7a44dbdb890b6b5867659f",
+      "classification": "truncated",
+      "condition": "C3",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "41d5beb8152d4ac0cfaeb1f7067c00cf4cbe544dbb7a44dbdb890b6b5867659f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "4ec71cccc6eeb008ed3a91ff9705d133d73b67a9305fd0d7709fe49b5ed3109d",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "eb51a003cebb4f294045bbc806d10234bc0a5055dfea4dac0aa31920ff95cd85",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f49287ffb1ac8567a971c66edeb938833a62ed6ba196b988d9dcae1d2544ade6",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "eb51a003cebb4f294045bbc806d10234bc0a5055dfea4dac0aa31920ff95cd85",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f49287ffb1ac8567a971c66edeb938833a62ed6ba196b988d9dcae1d2544ade6",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "f49287ffb1ac8567a971c66edeb938833a62ed6ba196b988d9dcae1d2544ade6",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "eb51a003cebb4f294045bbc806d10234bc0a5055dfea4dac0aa31920ff95cd85",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f49287ffb1ac8567a971c66edeb938833a62ed6ba196b988d9dcae1d2544ade6",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "eb51a003cebb4f294045bbc806d10234bc0a5055dfea4dac0aa31920ff95cd85",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "5ec7b088ec24c82835d1a73d96ef148747ed730ae3ce443c5726ae4c31cfc3dd",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "037d021a94014cb33db9f7ebf1e47a23bfc2a861d7d1adffabe2f134550b9d3f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5ec7b088ec24c82835d1a73d96ef148747ed730ae3ce443c5726ae4c31cfc3dd",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "037d021a94014cb33db9f7ebf1e47a23bfc2a861d7d1adffabe2f134550b9d3f",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "037d021a94014cb33db9f7ebf1e47a23bfc2a861d7d1adffabe2f134550b9d3f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "5ec7b088ec24c82835d1a73d96ef148747ed730ae3ce443c5726ae4c31cfc3dd",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "5ec7b088ec24c82835d1a73d96ef148747ed730ae3ce443c5726ae4c31cfc3dd",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "037d021a94014cb33db9f7ebf1e47a23bfc2a861d7d1adffabe2f134550b9d3f",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b46131878e04b3aa1c02a2ec76f21d6a704669883c30d80a3b52335d743b3f2e",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "022299317d700d59d683f1eafb7f5b5c6c8599c57db2313c081ce5fb63da2e9f",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b46131878e04b3aa1c02a2ec76f21d6a704669883c30d80a3b52335d743b3f2e",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "022299317d700d59d683f1eafb7f5b5c6c8599c57db2313c081ce5fb63da2e9f",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "022299317d700d59d683f1eafb7f5b5c6c8599c57db2313c081ce5fb63da2e9f",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b46131878e04b3aa1c02a2ec76f21d6a704669883c30d80a3b52335d743b3f2e",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b46131878e04b3aa1c02a2ec76f21d6a704669883c30d80a3b52335d743b3f2e",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "022299317d700d59d683f1eafb7f5b5c6c8599c57db2313c081ce5fb63da2e9f",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "96e824de74d755588ceb9ea8f9aac7727fdf0c6a69cb80ab8754ac2f3020271e",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d94d23ba4df991c9836fe11fb6895e21af64bf53fc602a6a977263ffa1dff97",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d94d23ba4df991c9836fe11fb6895e21af64bf53fc602a6a977263ffa1dff97",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "96e824de74d755588ceb9ea8f9aac7727fdf0c6a69cb80ab8754ac2f3020271e",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d94d23ba4df991c9836fe11fb6895e21af64bf53fc602a6a977263ffa1dff97",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "96e824de74d755588ceb9ea8f9aac7727fdf0c6a69cb80ab8754ac2f3020271e",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "0d94d23ba4df991c9836fe11fb6895e21af64bf53fc602a6a977263ffa1dff97",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "96e824de74d755588ceb9ea8f9aac7727fdf0c6a69cb80ab8754ac2f3020271e",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "a0375e0cf0f07c2bb8ddfea7d061c1f2805aea348117f09135c4c3d7f57f4db3",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9cc9ef59d859c3e2c0fa476c0d7eb1d150c7fdc4eabec3b6a0991af765aa5c0a",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a0375e0cf0f07c2bb8ddfea7d061c1f2805aea348117f09135c4c3d7f57f4db3",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9cc9ef59d859c3e2c0fa476c0d7eb1d150c7fdc4eabec3b6a0991af765aa5c0a",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a0375e0cf0f07c2bb8ddfea7d061c1f2805aea348117f09135c4c3d7f57f4db3",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9cc9ef59d859c3e2c0fa476c0d7eb1d150c7fdc4eabec3b6a0991af765aa5c0a",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a0375e0cf0f07c2bb8ddfea7d061c1f2805aea348117f09135c4c3d7f57f4db3",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9cc9ef59d859c3e2c0fa476c0d7eb1d150c7fdc4eabec3b6a0991af765aa5c0a",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "bfbd47f91b73625cb52bd79ff43e7cfbeab2f8122939dc887dd165554dd282ff",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9f74b4f29fe88e0796d56f71bb71b2208e0953d2074173f76750a9c6a27f0911",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bfbd47f91b73625cb52bd79ff43e7cfbeab2f8122939dc887dd165554dd282ff",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9f74b4f29fe88e0796d56f71bb71b2208e0953d2074173f76750a9c6a27f0911",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bfbd47f91b73625cb52bd79ff43e7cfbeab2f8122939dc887dd165554dd282ff",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "9f74b4f29fe88e0796d56f71bb71b2208e0953d2074173f76750a9c6a27f0911",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "9f74b4f29fe88e0796d56f71bb71b2208e0953d2074173f76750a9c6a27f0911",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "bfbd47f91b73625cb52bd79ff43e7cfbeab2f8122939dc887dd165554dd282ff",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "81c5bcc4a050364e99fab1e96a5a9bf342637261b49fb5bd20634c7ef59cb9e0",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e09354a4e4728a18564eeb590d977e90bafcab13a3af3f95ae3d0332eeddb8d2",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "81c5bcc4a050364e99fab1e96a5a9bf342637261b49fb5bd20634c7ef59cb9e0",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e09354a4e4728a18564eeb590d977e90bafcab13a3af3f95ae3d0332eeddb8d2",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "81c5bcc4a050364e99fab1e96a5a9bf342637261b49fb5bd20634c7ef59cb9e0",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "e09354a4e4728a18564eeb590d977e90bafcab13a3af3f95ae3d0332eeddb8d2",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "81c5bcc4a050364e99fab1e96a5a9bf342637261b49fb5bd20634c7ef59cb9e0",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "e09354a4e4728a18564eeb590d977e90bafcab13a3af3f95ae3d0332eeddb8d2",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "fbafd7a93d6c28604f69fb325f2f19fcbabe9f8cd1f4e158299b409d956bd243",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "722c577b0e8a8294f936688b71d46fdef84a8e2224dc6887e32e86888915d56c",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "fbafd7a93d6c28604f69fb325f2f19fcbabe9f8cd1f4e158299b409d956bd243",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "722c577b0e8a8294f936688b71d46fdef84a8e2224dc6887e32e86888915d56c",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "fbafd7a93d6c28604f69fb325f2f19fcbabe9f8cd1f4e158299b409d956bd243",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "722c577b0e8a8294f936688b71d46fdef84a8e2224dc6887e32e86888915d56c",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "722c577b0e8a8294f936688b71d46fdef84a8e2224dc6887e32e86888915d56c",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "fbafd7a93d6c28604f69fb325f2f19fcbabe9f8cd1f4e158299b409d956bd243",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "66826327d5f28b01837b5070c9250e948303f70c2e781bbc22e36cc9d7a419fe",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ee9e580120e5a9a6185d5ef80321d6c4e8a1dbb43690e49fc2a19d890294471",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ee9e580120e5a9a6185d5ef80321d6c4e8a1dbb43690e49fc2a19d890294471",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "66826327d5f28b01837b5070c9250e948303f70c2e781bbc22e36cc9d7a419fe",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.97,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ee9e580120e5a9a6185d5ef80321d6c4e8a1dbb43690e49fc2a19d890294471",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "66826327d5f28b01837b5070c9250e948303f70c2e781bbc22e36cc9d7a419fe",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "66826327d5f28b01837b5070c9250e948303f70c2e781bbc22e36cc9d7a419fe",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "7ee9e580120e5a9a6185d5ef80321d6c4e8a1dbb43690e49fc2a19d890294471",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "6b50d6560110c392080c5faed204a9f52c7d1af1515bdb24baf45fc411dcc096",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "36d2a7ae0b2670a1c2e6a78c84d6339148f113792a2d2a78026dfabbee4c76b2",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6b50d6560110c392080c5faed204a9f52c7d1af1515bdb24baf45fc411dcc096",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "36d2a7ae0b2670a1c2e6a78c84d6339148f113792a2d2a78026dfabbee4c76b2",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6b50d6560110c392080c5faed204a9f52c7d1af1515bdb24baf45fc411dcc096",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "36d2a7ae0b2670a1c2e6a78c84d6339148f113792a2d2a78026dfabbee4c76b2",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6b50d6560110c392080c5faed204a9f52c7d1af1515bdb24baf45fc411dcc096",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "36d2a7ae0b2670a1c2e6a78c84d6339148f113792a2d2a78026dfabbee4c76b2",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a5617e60cbf79f2e4da2fa7552f8c604d2d3f6c0e18deb3f55f6dc9a651e897a",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d25f2c15061e519986a1c84e552a81234d6b52d49a24b24f3aa1173824df6436",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.99,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a5617e60cbf79f2e4da2fa7552f8c604d2d3f6c0e18deb3f55f6dc9a651e897a",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d25f2c15061e519986a1c84e552a81234d6b52d49a24b24f3aa1173824df6436",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d25f2c15061e519986a1c84e552a81234d6b52d49a24b24f3aa1173824df6436",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a5617e60cbf79f2e4da2fa7552f8c604d2d3f6c0e18deb3f55f6dc9a651e897a",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "a5617e60cbf79f2e4da2fa7552f8c604d2d3f6c0e18deb3f55f6dc9a651e897a",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "d25f2c15061e519986a1c84e552a81234d6b52d49a24b24f3aa1173824df6436",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.98,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "59b014c976f895a4e9612eb4b4ba0bf9adc0ae4ec8b769fa189861a903a68609",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f0e0cc0001bbb85c4a9b91deca75407308421b686e7b3f2b30735f5358014c28",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f0e0cc0001bbb85c4a9b91deca75407308421b686e7b3f2b30735f5358014c28",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "59b014c976f895a4e9612eb4b4ba0bf9adc0ae4ec8b769fa189861a903a68609",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "59b014c976f895a4e9612eb4b4ba0bf9adc0ae4ec8b769fa189861a903a68609",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f0e0cc0001bbb85c4a9b91deca75407308421b686e7b3f2b30735f5358014c28",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 1,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "f0e0cc0001bbb85c4a9b91deca75407308421b686e7b3f2b30735f5358014c28",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1.0,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "59b014c976f895a4e9612eb4b4ba0bf9adc0ae4ec8b769fa189861a903a68609",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 1,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b53b67da2824cc2e35cb35b6788fd1fa4bf33b6007de25ef28d7252bc212909b",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "6f4cd4b487aa88abae0c4b8df7b71f62c4f0f65c34a43d1c0cbf44d054b2f51a",
+      "classification": "valid",
+      "condition": "C2",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "6f4cd4b487aa88abae0c4b8df7b71f62c4f0f65c34a43d1c0cbf44d054b2f51a",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 1.0,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b53b67da2824cc2e35cb35b6788fd1fa4bf33b6007de25ef28d7252bc212909b",
+      "classification": "valid",
+      "condition": "C1",
+      "confidence": 0.95,
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Incorrect"
+    },
+    {
+      "case_id": "b53b67da2824cc2e35cb35b6788fd1fa4bf33b6007de25ef28d7252bc212909b",
+      "classification": "truncated",
+      "condition": "C4",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    },
+    {
+      "case_id": "6f4cd4b487aa88abae0c4b8df7b71f62c4f0f65c34a43d1c0cbf44d054b2f51a",
+      "classification": "valid",
+      "condition": "C4",
+      "confidence": 0.85,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "6f4cd4b487aa88abae0c4b8df7b71f62c4f0f65c34a43d1c0cbf44d054b2f51a",
+      "classification": "valid",
+      "condition": "C3",
+      "confidence": 0.8,
+      "domain": "gsm8k",
+      "model": "local-llm",
+      "split": "calibration",
+      "verdict": "Correct"
+    },
+    {
+      "case_id": "b53b67da2824cc2e35cb35b6788fd1fa4bf33b6007de25ef28d7252bc212909b",
+      "classification": "truncated",
+      "condition": "C3",
+      "domain": "medqa",
+      "model": "local-llm",
+      "split": "calibration"
+    }
+  ],
+  "comparisons": [
+    [
+      "C2",
+      "C1"
+    ],
+    [
+      "C3",
+      "C1"
+    ],
+    [
+      "C4",
+      "C2"
+    ],
+    [
+      "C4",
+      "C3"
+    ]
+  ],
+  "conditions": [
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "domains": [
+    "gsm8k",
+    "medqa"
+  ],
+  "frozen_policy_sha256": "6f44b3d8ff711ed11035b40f81863f8bec1bb8a0c4f2c1de7a8c3f35a3810616",
+  "input_sha256": {
+    "formal-metrics.json": "f783fd04efc515d3109022813bda04a4e0490181f91b412122b0e92b56499e86",
+    "formal-predictions.jsonl": "3bb807aaa8c7d32963bc1f2f248b6f1acedb76dda9ce7d027f7b97695139dcc1",
+    "formal_cohort_manifest.csv": "cbb2ce3bfa11338d8693a6736bd0669d5b1e2a220ef7318a06175afcc5478327"
+  },
+  "model": "local-llm",
+  "ordering": "Test records retain exported schedule order. Recover original case IDs through the text-free cohort manifest before common tie hashing and sorted-stratum bootstrap sampling.",
+  "policies": [
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "7d4e163cdb38677d2673e841ee9535ce84d12da6dbe92343ef5e84824305422e",
+      "fraction": 0.5,
+      "group": [
+        "gsm8k",
+        "C1",
+        "local-llm"
+      ],
+      "retained_calibration": 30,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "c3905a07f2f880024e9a62400cda1499b7508f4b5912b8e0c4cab213d143d9bd",
+      "fraction": 0.75,
+      "group": [
+        "gsm8k",
+        "C1",
+        "local-llm"
+      ],
+      "retained_calibration": 45,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "eb4cf28f180a33b90478308665ea61ffa6fcfa748689c5db513bc3310a44c0b3",
+      "fraction": 0.9,
+      "group": [
+        "gsm8k",
+        "C1",
+        "local-llm"
+      ],
+      "retained_calibration": 54,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "78550affee323acf7d64ce1e2ff1c7200819b68161b27b8d91c6217d53a359a7",
+      "fraction": 0.5,
+      "group": [
+        "gsm8k",
+        "C2",
+        "local-llm"
+      ],
+      "retained_calibration": 30,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "b8f18db2b87adef08fcaac938e1386148b68d8e43eb491cd9e62757b267e6ac6",
+      "fraction": 0.75,
+      "group": [
+        "gsm8k",
+        "C2",
+        "local-llm"
+      ],
+      "retained_calibration": 45,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "e9eb185cd7c0eaa3059d87e08cec25430524a93ed167373942ae6526943aa7ef",
+      "fraction": 0.9,
+      "group": [
+        "gsm8k",
+        "C2",
+        "local-llm"
+      ],
+      "retained_calibration": 54,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1,
+      "cutoff_hash": "7d4e163cdb38677d2673e841ee9535ce84d12da6dbe92343ef5e84824305422e",
+      "fraction": 0.5,
+      "group": [
+        "gsm8k",
+        "C3",
+        "local-llm"
+      ],
+      "retained_calibration": 30,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1,
+      "cutoff_hash": "d65de8aee9149177dfeeca11736736d08b8a4b966191f1d1c236a896a826486a",
+      "fraction": 0.75,
+      "group": [
+        "gsm8k",
+        "C3",
+        "local-llm"
+      ],
+      "retained_calibration": 45,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1,
+      "cutoff_hash": "f391369e96d0b2bb27b04ad6341236cfb5dbc0fdc81b5c6f683f92c96d51a0cc",
+      "fraction": 0.9,
+      "group": [
+        "gsm8k",
+        "C3",
+        "local-llm"
+      ],
+      "retained_calibration": 54,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1,
+      "cutoff_hash": "7d4e163cdb38677d2673e841ee9535ce84d12da6dbe92343ef5e84824305422e",
+      "fraction": 0.5,
+      "group": [
+        "gsm8k",
+        "C4",
+        "local-llm"
+      ],
+      "retained_calibration": 30,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1,
+      "cutoff_hash": "d65de8aee9149177dfeeca11736736d08b8a4b966191f1d1c236a896a826486a",
+      "fraction": 0.75,
+      "group": [
+        "gsm8k",
+        "C4",
+        "local-llm"
+      ],
+      "retained_calibration": 45,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1,
+      "cutoff_hash": "f391369e96d0b2bb27b04ad6341236cfb5dbc0fdc81b5c6f683f92c96d51a0cc",
+      "fraction": 0.9,
+      "group": [
+        "gsm8k",
+        "C4",
+        "local-llm"
+      ],
+      "retained_calibration": 54,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "ec82f13b8df9777201043b05e9af4663c331a0f37822eba403c01253bed945f6",
+      "fraction": 0.5,
+      "group": [
+        "medqa",
+        "C1",
+        "local-llm"
+      ],
+      "retained_calibration": 30,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 0.95,
+      "cutoff_hash": "457153de0d26175de160ef5adac147e33fa9f2e697cd9d9274c6837cb4d96265",
+      "fraction": 0.75,
+      "group": [
+        "medqa",
+        "C1",
+        "local-llm"
+      ],
+      "retained_calibration": 45,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 0.95,
+      "cutoff_hash": "b95caf61ba4cabd3b071308603b834eeb856f3f83d9e09164e5a868841f7acbf",
+      "fraction": 0.9,
+      "group": [
+        "medqa",
+        "C1",
+        "local-llm"
+      ],
+      "retained_calibration": 54,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 1.0,
+      "cutoff_hash": "ea466bff9d74de9a602babdc8370ed17a7105db8440faf5fcf75fe290758b3e0",
+      "fraction": 0.5,
+      "group": [
+        "medqa",
+        "C2",
+        "local-llm"
+      ],
+      "retained_calibration": 30,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 0.95,
+      "cutoff_hash": "5bc5d8743cf0e49dbb58fdb8606d97c8d01c90a882a4f0b365aed5e93b66b061",
+      "fraction": 0.75,
+      "group": [
+        "medqa",
+        "C2",
+        "local-llm"
+      ],
+      "retained_calibration": 45,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 60,
+      "cutoff_confidence": 0.95,
+      "cutoff_hash": "c388a72f1d705b4758cfbee48bc52fd2551c52ef7e947d96ca3f3d44bc8c430c",
+      "fraction": 0.9,
+      "group": [
+        "medqa",
+        "C2",
+        "local-llm"
+      ],
+      "retained_calibration": 54,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 56,
+      "cutoff_confidence": 0.98,
+      "cutoff_hash": "8be024d50ffc849a5806982848e7fb5b42adfbe8c1bfa5d0c7658237f86139f3",
+      "fraction": 0.5,
+      "group": [
+        "medqa",
+        "C3",
+        "local-llm"
+      ],
+      "retained_calibration": 28,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 56,
+      "cutoff_confidence": 0.95,
+      "cutoff_hash": "a17dacf640c371713171363e5d7f1fe0b36782e1ece83ed4839d18f26b38645a",
+      "fraction": 0.75,
+      "group": [
+        "medqa",
+        "C3",
+        "local-llm"
+      ],
+      "retained_calibration": 42,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 56,
+      "cutoff_confidence": 0.9,
+      "cutoff_hash": "63c30f95e2ce84ca02a493346f879c162a2ffee5b758e8d273fe227caa6fc9ba",
+      "fraction": 0.9,
+      "group": [
+        "medqa",
+        "C3",
+        "local-llm"
+      ],
+      "retained_calibration": 50,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 56,
+      "cutoff_confidence": 0.98,
+      "cutoff_hash": "e5c47fb10e5a2bfa1b51012c42d475e5514c303a71b231485ea849d4884d9ab5",
+      "fraction": 0.5,
+      "group": [
+        "medqa",
+        "C4",
+        "local-llm"
+      ],
+      "retained_calibration": 28,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 56,
+      "cutoff_confidence": 0.95,
+      "cutoff_hash": "8c2e291c478931abc9e8a71ccd02ccdaeb8e489e4b485f93187febb0e602784f",
+      "fraction": 0.75,
+      "group": [
+        "medqa",
+        "C4",
+        "local-llm"
+      ],
+      "retained_calibration": 42,
+      "seed": 2612026,
+      "status": "available"
+    },
+    {
+      "calibration_valid": 56,
+      "cutoff_confidence": 0.92,
+      "cutoff_hash": "63c30f95e2ce84ca02a493346f879c162a2ffee5b758e8d273fe227caa6fc9ba",
+      "fraction": 0.9,
+      "group": [
+        "medqa",
+        "C4",
+        "local-llm"
+      ],
+      "retained_calibration": 50,
+      "seed": 2612026,
+      "status": "available"
+    }
+  ],
+  "repeats": 1000,
+  "schema_version": 1,
+  "scope": "Text-free replay inputs for stored outcomes and independently reconstructed calibration cutoffs",
+  "seed": 2612026,
+  "targets": [
+    0.5,
+    0.75,
+    0.9
+  ]
+}

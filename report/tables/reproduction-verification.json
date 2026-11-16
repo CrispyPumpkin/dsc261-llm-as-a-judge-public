@@ -1,0 +1,9 @@
+{
+  "point_estimates": 24,
+  "policies_reconstructed": 24,
+  "acceptance_flags": 3360,
+  "exact_seeded_random_and_bootstrap_replay": true,
+  "private_data_required": false,
+  "interpretation": "Replay of stored outcomes using original deterministic ID ordering; fresh inference is a separate experiment",
+  "six_case_sensitivity_replayed": true
+}
