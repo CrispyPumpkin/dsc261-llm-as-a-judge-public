@@ -29,7 +29,7 @@ The original pilot tested 100 questions per domain. The plain prompt disagreed w
 **Controlled prompts.** We queried a local large language model for a binary verdict and confidence in that verdict. We crossed two prompt choices: providing a grading rubric and enabling the endpoint's thinking setting. Across four conditions and 400 candidates, 1,586 of 1,600 calls produced valid judgments. The 14 truncated responses occurred on medical questions with thinking enabled. We count these separately from a deliberate decision to defer.
 
 ## 4 Direct abstention
-A separate plain, thinking-off prompt, informed by the team pipeline design [6], explicitly allowed abstention. The local model graded all 280 evaluation cases. It made 41 math errors and 22 medical errors. Of those 63 mistakes, 48 accepted a wrong candidate and 15 rejected a correct one. Giving the judge discretion referred none of them for review. This establishes its behavior on this prompt and sample. With all cases retained, there is no selected subset on which to evaluate its ability to pick cases. The following comparison uses the confidence scores from the binary-verdict runs.
+In a separate run, we kept thinking off and used the plain prompt, but gave the judge a third option: it could abstain. The local model graded all 280 evaluation cases. It made 41 math errors and 22 medical errors. Of those 63 mistakes, 48 accepted a wrong candidate and 15 rejected a correct one. Giving the judge discretion referred none of them for review. This establishes its behavior on this prompt and sample. With all cases retained, there is no selected subset on which to evaluate its ability to pick cases. The following comparison uses the confidence scores from the binary-verdict runs.
 
 
 ## 5 Confidence under a fixed review budget
@@ -158,5 +158,3 @@ A fixed review budget helped on this medical sample. On math, a queue of equally
 [4] Karl Cobbe et al. 2021. Training Verifiers to Solve Math Word Problems. arXiv:2110.14168. https://arxiv.org/abs/2110.14168
 
 [5] Di Jin, Eileen Pan, Nassim Oufattole, Wei-Hung Weng, Hanyi Fang and Peter Szolovits. 2021. What Disease Does This Patient Have? A Large-Scale Open Domain Question Answering Dataset from Medical Exams. Applied Sciences 11(14), 6421. doi:10.3390/app11146421. https://doi.org/10.3390/app11146421
-
-[6] EdithGu. DSC261 judging pipeline skeleton, project collaboration, commit c9f40de. https://github.com/EdithGu/dsc261-llm-judge/tree/c9f40de92fa61309b0cd733dabcfafd9fa5363f2
