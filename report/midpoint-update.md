@@ -5,30 +5,42 @@ Haoxiang Qiu, Yuguo Du, Edith Gu, Lucia Si, Wenkai Kang
 
 University of California San Diego
 
-## 1 The grading decision we want to check
+## 1 Can a grader find its own mistakes?
 
-Suppose a student gives the right numerical answer and an automated grader marks it wrong. The student's answer is correct, but the grading decision is an error. If a reviewer has time to check only a few decisions, can the grader's own confidence help them find mistakes like this one? We study that question on math word problems and medical examination questions. Both have answer keys, so we can count exactly how many mistakes a review queue contains before anyone attempts a correction.
+An automated grader can reject a correct answer or accept a wrong one. We ask whether it can identify judgments that need a second look. We first let it choose to abstain, then test whether its stated confidence locates more errors than random selection at the same review workload. The target is the correctness of the grading decision, not whether the candidate answer is correct.
 
-We tested two ways of asking the grader where it needed help. In one run, it could explicitly decline to grade a candidate. In the other runs, it had to give a verdict and report its confidence. We then kept some of those verdicts and set the rest aside. A useful confidence score should put more mistakes into a queue of a given size than drawing the same number of cases at random. This comparison follows selective classification [1]. Prior work on models' stated probabilities [2] and on automated judging [3] motivates a narrower question here. Even a judge that grades most answers correctly may give its few wrong verdicts the highest possible score.
+We apply selective classification [1], stated confidence [2] and LLM judging [3] to controlled math and medical cases, checking whether benefits survive alternative choices among identical confidence scores.
+
+![Midpoint study workflow](workflow-midterm.png)
+Figure 1. Midpoint scope: construct fixed cases, collect judgments, and test error selection. Selecting a case does not yet correct its judgment.
 
 ## 2 Questions, candidates and scoring
 
-We first needed to know whether these benchmarks would yield enough grading errors to study. During development, the plain prompt disagreed with the key on 41 of 100 math candidates and 13 of 100 medical candidates. We kept both datasets. We sampled the formal questions from the official test pools and excluded development items by source identifier and normalized question text. The sampling seed was 2612026. This gives us fresh questions relative to our pilot. We have no way to check whether the judge encountered a benchmark during training.
+Pilot runs found 41 math and 13 medical grading errors per 100 candidates, so we kept both datasets. Formal sampling used seed 2612026 and the official test pools, excluding development items by source ID and normalized question text. This prevents reuse of our pilot questions, not possible exposure during model training.
 
-Each formal question received one candidate answer, which stayed the same across prompts. For GSM8K [4], a correct candidate used the reference number and a wrong candidate used a deterministic numerical change. For US MedQA [5], a correct candidate used the keyed option and a wrong one used a distractor already present in the question. A local large language model saw the question, the candidate and, for MedQA, the options. We kept the key for scoring. A rejection of a wrong candidate and an acceptance of a correct candidate each earned one correct judgment.
+Each formal question received one candidate answer, which stayed the same across prompts. For GSM8K [4], a correct candidate used the reference integer; wrong candidates used a fixed, seeded choice among adding one, subtracting one, doubling or halving, restricted to a different integer with the same sign. US MedQA [5] used the native five-option English questions: a correct candidate was the keyed option and a wrong one an existing distractor. We excluded unusable answer formats, missing-image references and conflicting duplicates before sampling. No model generated candidates. The judge saw the question, candidate and original medical options. We kept the key for scoring. A rejection of a wrong candidate and an acceptance of a correct candidate each earned one correct judgment.
 
-Table 1. The two splits serve different purposes. Within every cell, half the candidates were correct and half were wrong.
+Table 1. The two splits serve different purposes. Within each split, half the candidates were correct and half were wrong; every question had one fixed candidate.
 
 | Dataset | Set the rule | Test the rule | Total |
 | --- | --- | --- | --- |
 | GSM8K | 60 | 140 | 200 |
 | US MedQA | 60 | 140 | 200 |
 
-## 3 Four ways to grade the same answer
+## 3 Model and four controlled conditions
 
-We started with a short prompt asking for a verdict and a number from 0 to 1. The number referred to the judge's confidence in its own verdict. A judge could reject a candidate with confidence 1.0. We varied two choices independently. The rubric asked it to solve the problem, check units and constraints, and compare the result with the candidate. The thinking setting controlled whether the model could use a reasoning phase before returning its verdict. This gave us four conditions: plain, rubric only, thinking only, and thinking with the rubric.
+All reported judgments used one locally hosted model served as qwen3.8-27b. The archived formal configuration and interface audit agree on that identifier. We have not independently verified its upstream weight revision. Formal calls used temperature 0, an 8,192-token output limit, concurrency one and no retries. A new run need not produce identical outputs.
 
-The 400 questions yielded 1,600 scheduled judgments across those conditions. We obtained 1,586 usable responses. The other 14 reached the output limit on MedQA with thinking enabled. We recorded them as incomplete. Counting an interrupted response as a voluntary decision to abstain would mix a limit on generation with the behavior we wanted to measure.
+Table 2. One model, four configurations. The rubric asked the judge to solve independently, check units and constraints, then compare its answer with the candidate.
+
+| Condition | Thinking | Rubric |
+| --- | --- | --- |
+| C1: plain | Off | No |
+| C2: rubric | Off | Yes |
+| C3: thinking | On | No |
+| C4: both | On | Yes |
+
+The interface setting enable_thinking controlled the reasoning mode. Each response returned a binary verdict and confidence from 0 to 1 in that verdict. Rejecting a candidate with confidence 1.0 therefore means certainty in the rejection. Of 1,600 scheduled calls on 400 candidates, 1,586 were usable. The remaining 14 reached the output limit on MedQA with thinking enabled; they are incomplete calls, not voluntary abstentions. Exact prompts and model provenance accompany the release.
 
 ---
 
@@ -40,9 +52,9 @@ This left us with zero referrals from the voluntary prompt. Matching every other
 
 ## 5 What confidence buys at a fixed workload
 
-For each domain and grading condition, we used the 60 calibration cases to set a rule targeting 50%, 75% or 90% retention. We froze both the score cutoff and the rule for cases tied at that cutoff. On the 140 test questions, the number kept could differ from the target. Coverage is the number kept divided by 140. Retained error rate is the number of grading mistakes among the kept cases divided by the number kept. For each comparison, random selection keeps exactly the same number from the same pool of valid verdicts. Its average retained error rate equals the error rate in that pool.
+For each domain and grading condition, we used the 60 calibration cases to set a rule targeting 50%, 75% or 90% retention. We froze both the score cutoff and a tie rule based on a seeded hash of the case ID, without using correctness labels. Here calibration sets a selection rule; it does not recalibrate the probabilities. On the 140 test questions, the number kept could differ from the target. Coverage is the number kept divided by 140. Retained error rate is the number of grading mistakes among the kept cases divided by the number kept. For each comparison, random selection keeps exactly the same number from the same pool of valid verdicts. Its average retained error rate equals the error rate in that pool.
 
-Table 2. Plain-prompt test results. Each entry gives the number of mistakes divided by the number of verdicts kept. Each domain started with 140 verdicts.
+Table 3. Plain-prompt test results. Each entry gives the number of mistakes divided by the number of verdicts kept. Each domain started with 140 verdicts.
 
 | Target | GSM8K | US MedQA |
 | --- | --- | --- |
@@ -52,13 +64,13 @@ Table 2. Plain-prompt test results. Each entry gives the number of mistakes divi
 
 ![Retained error against actual coverage for math and medicine](risk-coverage.png)
 
-Figure 1. Plain prompt, thinking off. The horizontal axis shows the share of test cases actually kept. The labels identify the targets used on calibration data. The dashed line is the expected error rate if we keep the same number at random.
+Figure 2. Plain prompt, thinking off. The horizontal axis shows the share of test cases actually kept. The labels identify the targets used on calibration data. The dashed line is the expected error rate if we keep the same number at random.
 
 ### Following 54 medical referrals
 
 The plain medical judge made 21 mistakes in 140 verdicts. At the 75% target, the rule kept 86 verdicts and marked the other 54 for review. The 86 kept cases contained eight mistakes. The queue therefore contained 13 mistakes and 41 sound verdicts. Choosing 54 cases at random would find 54 × 21/140 = 8.1 mistakes on average. With the same number of places, the confidence rule found about five more. We can count those mistakes from the key. How many a reviewer would actually correct is a separate question.
 
-The retained error rate was 9.30%, compared with 15.00% under random selection. The estimated difference was −5.70 percentage points, with a 95% paired bootstrap interval from −11.10 to −1.02 points for the frozen policy. Raising the target to 90% reduced the queue to 18 cases and left 16 mistakes among the 122 kept. The choice of target changes both how many decisions someone must examine and how many wrong decisions get through.
+The retained error rate was 9.30%, compared with 15.00% under random selection. The estimated difference was −5.70 percentage points, with a 95% paired bootstrap interval from −11.10 to −1.02 points. We resampled questions 1,000 times within candidate-label groups while keeping the calibrated rule fixed; this does not include uncertainty from fitting a new rule. Raising the target to 90% reduced the queue to 18 cases and left 16 mistakes among the 122 kept. The choice of target changes both how many decisions someone must examine and how many wrong decisions get through.
 
 ---
 
@@ -72,7 +84,7 @@ The rubric-only results offer a second check. On math, the observed retained err
 
 ## 7 What changed with the grading prompt?
 
-Table 3. Grading errors at the 75% target. “All” counts every valid test verdict. “Kept” counts only the verdicts retained by the confidence rule. The two columns for each domain refer to the same 140 scheduled questions.
+Table 4. Grading errors at the 75% target. “All” counts every valid test verdict. “Kept” counts only the verdicts retained by the confidence rule. The two columns for each domain refer to the same 140 scheduled questions.
 
 | Prompt | Math all | Math kept | Med. all | Med. kept |
 | --- | --- | --- | --- | --- |
@@ -83,15 +95,17 @@ Table 3. Grading errors at the 75% target. “All” counts every valid test ver
 
 Adding the rubric to the plain prompt reduced total mistakes slightly in both domains. Enabling thinking changed the verdicts much more. In math, the thinking-only run made just one mistake, and the retention rule kept it. The run with both settings made none. With so few mistakes, high grading accuracy gives us little evidence about whether the judge can identify its own failures.
 
-In medicine, the thinking-only run returned 138 valid verdicts. All five errors scored below the retention cutoff. The run with both settings returned 136 valid verdicts and placed all four errors below its cutoff. We observed zero errors among the 107 and 113 retained judgments, respectively. The corresponding 95% Wilson upper limits are 3.47% and 3.29%. The denominators in Table 3 show a second cost. Six of the 280 scheduled medical test responses across these two settings were incomplete. A system using either prompt would still need a policy for a case that reaches the output limit before a verdict arrives.
+In medicine, the thinking-only run returned 138 valid verdicts. All five errors scored below the retention cutoff. The run with both settings returned 136 valid verdicts and placed all four errors below its cutoff. We observed zero errors among the 107 and 113 retained judgments, respectively. The corresponding 95% Wilson upper limits are 3.47% and 3.29%. The denominators in Table 4 show a second cost. Six of the 280 scheduled medical test responses across these two settings were incomplete. A system using either prompt would still need a policy for a case that reaches the output limit before a verdict arrives.
 
-## 8 What remains for the final study
+## 8 Midpoint findings and next steps
 
-By midpoint we had completed the pilot, the four grading conditions, the voluntary-abstention run and all 24 comparisons of confidence with random selection. The two benchmarks differ in answer format, the kinds of wrong answers we constructed, and difficulty. We cannot attribute the contrast to subject matter alone. We also deliberately balanced correct and wrong candidates. A classroom or clinical review queue could have a different mix. Our medical results concern agreement with examination keys.
+Completed work comprises the pilot, four grading conditions, voluntary abstention and all 24 confidence/random comparisons. The medical scores concentrated some errors into a smaller queue. Math scores were almost all identical, so favorable fixed selections did not establish useful ranking. Thinking improved grading substantially but left few errors with which to evaluate failure detection.
 
-The next question follows directly from the 54 medical referrals. If we use the thinking-enabled verdict for just those cases, how many first-pass errors does it correct, and how many sound decisions does it overturn? We can answer by matching the saved verdicts question by question and comparing with random referral of the same size. We can also count the output tokens spent on both passes. This would show what the proposed second look buys beyond putting more mistakes in the queue.
+The benchmarks differ in format, constructed error types and difficulty; the contrast cannot be attributed to subject matter alone. The balanced, controlled candidates are not a representative sample of student or model-generated mistakes. Training exposure is unknown, and medical correctness means agreement with examination keys, not clinical validation.
 
-The project archive includes the case counts, selection rules and recorded verdicts used in these calculations. Codex assisted with implementation, analysis and drafting.
+The final study will ask what happens after referral: using each flagged case's saved thinking-enabled verdict, how many errors are corrected and how many new errors introduced? We will compare equal-size random referrals and count both stages' output tokens. This is an offline reconstruction using independent judgments, not a model reading and revising its own earlier answer.
+
+The archive supplies source/candidate construction, frozen rules and saved judgments. It supports offline analysis without the model; a fresh model run is a separate reproduction step. Codex assisted with implementation, analysis and drafting.
 
 ## References
 

@@ -36,7 +36,9 @@ def front(c,d):
     furniture(c,d);c.saveState();c.setFillColor(INK);c.setFont('Helvetica',8.5);c.drawCentredString(W/2,755,'DSC 261   /   RESPONSIBLE DATA SCIENCE   /   FINAL REPORT');c.setFont('Times-Bold',18.5);c.drawCentredString(W/2,727,'Can a Language-Model Judge Identify Its Own Grading Errors?');c.setFont('Times-Roman',11);c.drawCentredString(W/2,706,'Haoxiang Qiu, Yuguo Du, Edith Gu, Lucia Si, Wenkai Kang');c.setFont('Times-Italic',9.5);c.drawCentredString(W/2,691,'University of California San Diego');c.setStrokeColor(LINE);c.line(M,679,W-M,679);c.restoreState()
 def tbl(lines):
     parts=[[v.strip() for v in line.strip('|').split('|')] for line in lines if not line.startswith('| ---')];n=len(parts[0]);assert all(len(r)==n for r in parts)
-    if n==3: weights=[.23,.36,.41]
+    if n==4: weights=[.34,.20,.23,.23]
+    elif parts[0][0]=='Condition': weights=[.46,.27,.27]
+    elif n==3: weights=[.23,.36,.41]
     elif parts[0][0]=='Target': weights=[.13,.19,.245,.19,.245]
     elif parts[0][0]=='Prompt': weights=[.21,.17,.225,.17,.225]
     else:weights=[.28,.19,.14,.20,.19]
@@ -105,6 +107,8 @@ def cost_plot():
     return graph
 
 def main():
+    from workflow import export
+    export(D.parent)
     text=(D/'final-report.md').read_text(encoding='utf8');lines=text[text.index('## Abstract'):].splitlines();out=[];i=0;refs=False
     while i<len(lines):
         line=lines[i].strip();i+=1
@@ -115,9 +119,10 @@ def main():
         if line.startswith('### '):out.append(para(line[4:],h3));continue
         if line.startswith('!['):
             is_cost = 'paired-cost.png' in line
-            graph = cost_plot() if is_cost else workload_plot()
+            from workflow import workflow
+            graph = workflow(True,CW) if 'workflow-final' in line else (cost_plot() if is_cost else workload_plot())
             while i<len(lines) and not lines[i].strip():i+=1
-            assert lines[i].startswith('Figure 2.' if is_cost else 'Figure 1.');out.append(KeepTogether([graph,para(lines[i],cap)]));i+=1;continue
+            assert lines[i].startswith('Figure ');out.append(KeepTogether([graph,para(lines[i],cap)]));i+=1;continue
         if line.startswith('Table ') or line.startswith('|'):
             group=[];rows=[]
             if line.startswith('Table '):group.append(para(line,cap))

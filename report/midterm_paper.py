@@ -33,7 +33,7 @@ def blocks(lines):
                 i += 1
             yield 'table', (line, rows)
         elif line.startswith('!['):
-            yield 'figure', lines[i]
+            yield 'figure', (line, lines[i])
             i += 1
         elif line.startswith('## '):
             yield 'section', line[3:]
@@ -67,6 +67,10 @@ def tex_body(lines):
             out += [' & '.join(map(tex, row)) + r'\\' for row in rows[1:]]
             out += [r'\bottomrule\end{tabular*}\end{minipage}\par\medskip']
         elif kind == 'figure':
+            image_line, value = value
+            if 'workflow-' in image_line:
+                out += [r'\par\medskip\noindent\begin{minipage}{\linewidth}\centering', r'\includegraphics[width=\linewidth]{workflow-midterm.pdf}\par', r'\raggedright\small\emph{' + tex(value) + r'}\end{minipage}\par\medskip']
+                continue
             out += [r'\par\medskip\noindent\begin{minipage}{\linewidth}\centering',
                     r'\includegraphics[width=.89\linewidth,trim=0 0 256bp 0,clip]{risk-coverage.pdf}\par',
                     r'\includegraphics[width=.89\linewidth,trim=254bp 0 0 0,clip]{risk-coverage.pdf}\par',
@@ -110,6 +114,8 @@ def latex_document(meta, pages):
 
 
 def render(folder):
+    from workflow import export
+    export(folder)
     meta, pages = manuscript(folder)
     if shutil.which('pdflatex') and shutil.which('kpsewhich'):
         # Minimal TeX installs need not have the ACM font packages.
@@ -120,6 +126,7 @@ def render(folder):
                 for name in ['acmart.cls', 'pvldb.sty']:
                     shutil.copyfile(folder / 'midterm-template' / name, stage / name)
                 shutil.copyfile(folder / 'risk-coverage.pdf', stage / 'risk-coverage.pdf')
+                shutil.copyfile(folder / 'workflow-midterm.pdf', stage / 'workflow-midterm.pdf')
                 (stage / 'paper.tex').write_text(latex_document(meta, pages), encoding='utf8')
                 for _ in range(2):
                     job = subprocess.run(['pdflatex','-interaction=nonstopmode','-halt-on-error','paper.tex'],
@@ -181,6 +188,11 @@ def portable_pdf(folder, meta, pages):
                                                ('RIGHTPADDING',(0,0),(-1,-1),1)]))
                     group = [Paragraph(escape(label),caption),table]
                 elif kind == 'figure':
+                    image_line, value = value
+                    if 'workflow-' in image_line:
+                        from workflow import workflow
+                        groups.append([workflow(False,width),Paragraph(escape(value),caption)])
+                        continue
                     group = []
                     with Raster.open(folder/'risk-coverage.png') as figure:
                         w,h = figure.size
@@ -207,6 +219,7 @@ def portable_pdf(folder, meta, pages):
                     items.append(Spacer(1,6))
                 box = KeepInFrame(width,top-52,items,mode='shrink')
                 _,height = box.wrapOn(pdf,width,top-52)
+                print('MIDTERM_COLUMN',number,round(getattr(box,'_scale',1),4))
                 box.drawOn(pdf,x,top-height)
         pdf.setFont('Times-Roman',9)
         pdf.drawCentredString(306,28,str(number))

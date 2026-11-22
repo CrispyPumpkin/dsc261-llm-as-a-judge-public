@@ -1,0 +1,20 @@
+{
+  "served_model_identifier": "qwen3.8-27b",
+  "description": "Locally hosted language model; the service identifier is not an independently verified upstream checkpoint name.",
+  "evidence": {
+    "formal_config_git_revision": "567466054d56",
+    "formal_config_path": "configs/formal.json",
+    "formal_config_sha256": "e88be2945446b4c919bbcdef8974f8074948946564d7fbf2b24a06397ba475b9",
+    "interface_audit_date_utc": "2026-11-09",
+    "interface_audit_observation": "The model listing and toy response records reported qwen3.8-27b; the service reported weight_version default.",
+    "upstream_weights_revision": "not independently verified"
+  },
+  "formal_settings": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "concurrency": 1,
+    "retries": 0
+  },
+  "analysis_record_alias": "local-llm",
+  "alias_note": "The existing normalized records use this alias for the same served model. Their original bytes are preserved."
+}
